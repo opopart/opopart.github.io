@@ -2,10 +2,8 @@
 
 
 
-  
 
-
-<html class="theme-next muse use-motion" lang="zh-Hans">
+<html class="theme-next gemini" lang="zh-Hans">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -80,10 +78,10 @@
 
 
 <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
+<meta property="og:title" content="Myblog">
 <meta property="og:url" content="http://yoursite.com/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="article:author" content="John Doe">
+<meta property="og:site_name" content="Myblog">
+<meta property="article:author" content="opopart">
 <meta name="twitter:card" content="summary">
 
 
@@ -92,12 +90,12 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Muse',
+    scheme: 'Gemini',
     version: '5.1.4',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: true,
     tabs: true,
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":{"position":"left","display":"post"}}},
+    motion: {"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     duoshuo: {
       userId: '0',
       author: '博主'
@@ -120,7 +118,7 @@
 
 
 
-  <title>Hexo</title>
+  <title>Myblog</title>
   
 
 
@@ -151,7 +149,7 @@
     <div class="custom-logo-site-title">
       <a href="/"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">Hexo</span>
+        <span class="site-title">Myblog</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -177,7 +175,7 @@
       
         
         <li class="menu-item menu-item-home">
-          <a href="/%20" rel="section">
+          <a href="/" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
@@ -186,18 +184,8 @@
         </li>
       
         
-        <li class="menu-item menu-item-about">
-          <a href="/about/%20" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
-            
-            关于
-          </a>
-        </li>
-      
-        
         <li class="menu-item menu-item-tags">
-          <a href="/tags/%20" rel="section">
+          <a href="/tags" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
@@ -207,7 +195,7 @@
       
         
         <li class="menu-item menu-item-categories">
-          <a href="/categories/%20" rel="section">
+          <a href="/categories" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
             
@@ -217,7 +205,7 @@
       
         
         <li class="menu-item menu-item-archives">
-          <a href="/archives/%20" rel="section">
+          <a href="/archives" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
@@ -258,16 +246,16 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/07/16/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/07/17/%E5%9F%BA%E7%A1%80/HTML/H5%E5%8D%81%E5%A4%A7%E6%96%B0%E7%89%B9%E6%80%A7/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
+      <meta itemprop="name" content="opopart">
       <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
+      <meta itemprop="name" content="Myblog">
     </span>
 
     
@@ -277,7 +265,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2020/07/16/hello-world/" itemprop="url">hello-world</a></h1>
+                <a class="post-title-link" href="/2020/07/17/%E5%9F%BA%E7%A1%80/HTML/H5%E5%8D%81%E5%A4%A7%E6%96%B0%E7%89%B9%E6%80%A7/" itemprop="url">HTML十大特性</a></h1>
         
 
         <div class="post-meta">
@@ -289,8 +277,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-07-16T13:40:44+08:00">
-                2020-07-16
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-07-17T11:13:47+08:00">
+                2020-07-17
               </time>
             
 
@@ -299,6 +287,39 @@
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%9F%BA%E7%A1%80/" itemprop="url" rel="index">
+                    <span itemprop="name">基础</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%9F%BA%E7%A1%80/HTML/" itemprop="url" rel="index">
+                    <span itemprop="name">HTML</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -329,7 +350,1420 @@
       
         
           
+            <h2 id="一、语义标签"><a href="#一、语义标签" class="headerlink" title="一、语义标签"></a>一、语义标签</h2><table>
+<thead>
+<tr>
+<th align="center">标签</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">hrader/header</td>
+<td>定义了文档的头部区域</td>
+</tr>
+<tr>
+<td align="center">footer/footer</td>
+<td>定义了文档的尾部区域</td>
+</tr>
+<tr>
+<td align="center">nav/nav</td>
+<td>定义文档的导航</td>
+</tr>
+<tr>
+<td align="center">section/section</td>
+<td>定义文档中的节（section、区段）</td>
+</tr>
+<tr>
+<td align="center">article/article</td>
+<td>定义页面独立的内容区域</td>
+</tr>
+<tr>
+<td align="center">aside/aside</td>
+<td>定义页面的侧边栏内容</td>
+</tr>
+<tr>
+<td align="center">detailes/detailes</td>
+<td>用于描述文档或文档某个部分的细节</td>
+</tr>
+<tr>
+<td align="center">summary/summary</td>
+<td>标签包含 details 元素的标题</td>
+</tr>
+<tr>
+<td align="center">dialog/dialog</td>
+<td>定义对话框，比如提示框</td>
+</tr>
+</tbody></table>
+<h2 id="二、增强表单"><a href="#二、增强表单" class="headerlink" title="二、增强表单"></a>二、增强表单</h2><h4 id="1-新增input输入类型"><a href="#1-新增input输入类型" class="headerlink" title="1.新增input输入类型"></a>1.新增input输入类型</h4><table>
+<thead>
+<tr>
+<th align="center">输入类型</th>
+<th align="center">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">color</td>
+<td align="center">主要用于选取颜色</td>
+</tr>
+<tr>
+<td align="center">date</td>
+<td align="center">从一个日期选择器选择一个日期</td>
+</tr>
+<tr>
+<td align="center">datetime</td>
+<td align="center">选择一个日期（UTC 时间）</td>
+</tr>
+<tr>
+<td align="center">datetime-local</td>
+<td align="center">选择一个日期和时间 (无时区)</td>
+</tr>
+<tr>
+<td align="center">email</td>
+<td align="center">包含 e-mail 地址的输入域</td>
+</tr>
+<tr>
+<td align="center">month</td>
+<td align="center">选择一个月份</td>
+</tr>
+<tr>
+<td align="center">number</td>
+<td align="center">数值的输入域</td>
+</tr>
+<tr>
+<td align="center">range</td>
+<td align="center">一定范围内数字值的输入域</td>
+</tr>
+<tr>
+<td align="center">search</td>
+<td align="center">用于搜索域</td>
+</tr>
+<tr>
+<td align="center">tel</td>
+<td align="center">定义输入电话号码字段</td>
+</tr>
+<tr>
+<td align="center">time</td>
+<td align="center">选择一个时间</td>
+</tr>
+<tr>
+<td align="center">url</td>
+<td align="center">URL 地址的输入域</td>
+</tr>
+<tr>
+<td align="center">week</td>
+<td align="center">选择周和年</td>
+</tr>
+</tbody></table>
+<h4 id="2-html5新增表单元素"><a href="#2-html5新增表单元素" class="headerlink" title="2.html5新增表单元素"></a>2.html5新增表单元素</h4><table>
+<thead>
+<tr>
+<th>表单元素</th>
+<th align="center">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><datalist></td>
+<td align="center">元素规定输入域的选项列表<br/>使用 <input> 元素的 list 属性与 <datalist> 元素的 id 绑定</td>
+</tr>
+<tr>
+<td><keygen></td>
+<td align="center">提供一种验证用户的可靠方法<br/>标签规定用于表单的密钥对生成器字段。</td>
+</tr>
+<tr>
+<td><output></td>
+<td align="center">用于不同类型的输出<br/>比如计算或脚本输出</td>
+</tr>
+</tbody></table>
+<h4 id="3-新增表单属性"><a href="#3-新增表单属性" class="headerlink" title="3.新增表单属性"></a>3.新增表单属性</h4><p>placehoder ：输入框提示</p>
+<p>required：输入域不能为空</p>
+<p>pattern：正则表达式验证<code>&lt;input&gt;</code>的值</p>
+<p>min和max：元素最大最小值</p>
+<p>step：合法的数值间隔</p>
+<p>heigh和width：用于 image 类型的 <code>&lt;input&gt;</code> 标签的图像高度和宽度。</p>
+<p>autofocus:自动获得焦点</p>
+<p>multiple：规定<code>&lt;input&gt;</code>可选多个值</p>
+<h2 id="三、视频和音频"><a href="#三、视频和音频" class="headerlink" title="三、视频和音频"></a>三、视频和音频</h2><h4 id="1-音频"><a href="#1-音频" class="headerlink" title="1.音频"></a>1.音频</h4><p>​        使用<code>&lt;audio&gt;</code></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">audio</span> <span class="attr">controls</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">source</span> <span class="attr">src</span>=<span class="string">"horse.ogg"</span> <span class="attr">type</span>=<span class="string">"audio/ogg"</span>&gt;</span>     //source 会选择第一个支持的格式</span><br><span class="line">  <span class="tag">&lt;<span class="name">source</span> <span class="attr">src</span>=<span class="string">"horse.mp3"</span> <span class="attr">type</span>=<span class="string">"audio/mpeg"</span>&gt;</span></span><br><span class="line">您的浏览器不支持 audio 元素。</span><br><span class="line"><span class="tag">&lt;/<span class="name">audio</span>&gt;</span></span><br><span class="line">//目前支持，MP4，Wav，Ogg</span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="2-视频"><a href="#2-视频" class="headerlink" title="2.视频"></a>2.视频</h4><p>​        使用<code>&lt;video&gt;</code></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">video</span> <span class="attr">width</span>=<span class="string">"320"</span> <span class="attr">height</span>=<span class="string">"240"</span> <span class="attr">controls</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">source</span> <span class="attr">src</span>=<span class="string">"movie.mp4"</span> <span class="attr">type</span>=<span class="string">"video/mp4"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">source</span> <span class="attr">src</span>=<span class="string">"movie.ogg"</span> <span class="attr">type</span>=<span class="string">"video/ogg"</span>&gt;</span></span><br><span class="line">您的浏览器不支持Video标签。</span><br><span class="line"><span class="tag">&lt;/<span class="name">video</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>有play() 和 pause() 方法</p>
+<h2 id="四、canvas绘图"><a href="#四、canvas绘图" class="headerlink" title="四、canvas绘图"></a>四、canvas绘图</h2><p>​        html5 的 canvas 元素使用JavaScript在网页上绘制图像</p>
+<h3 id="1-创建画布"><a href="#1-创建画布" class="headerlink" title="1.创建画布"></a>1.创建画布</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">canvas</span> <span class="attr">id</span>=<span class="string">"myCanvas"</span> <span class="attr">width</span>=<span class="string">"200"</span> <span class="attr">height</span>=<span class="string">"100"</span>&gt;</span><span class="tag">&lt;/<span class="name">canvas</span>&gt;</span>    //创建一个矩形区域的画布</span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span><span class="actionscript">							  <span class="comment">//通过JavaScript进行绘制</span></span></span><br><span class="line"><span class="javascript"><span class="keyword">var</span> c=<span class="built_in">document</span>.getElementById(<span class="string">"myCanvas"</span>);</span></span><br><span class="line"><span class="actionscript"><span class="keyword">var</span> cxt=c.getContext(<span class="string">"2d"</span>);	 <span class="comment">//getContext("2d")对象是内建的HTML5对象，拥有很多绘制路径、矩形、圆形、字符以及添加图像的方法</span></span></span><br><span class="line"><span class="actionscript">cxt.fillStyle=<span class="string">"#FF0000"</span>;	<span class="comment">// 要填充的颜色</span></span></span><br><span class="line"><span class="actionscript">cxt.fillRect(<span class="number">0</span>,<span class="number">0</span>,<span class="number">150</span>,<span class="number">75</span>);	<span class="comment">//绘制矩形</span></span></span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="2-绘制路径"><a href="#2-绘制路径" class="headerlink" title="2.绘制路径"></a>2.绘制路径</h3><p>主要是两个方法：moveTo(x,y)  定义线条开始坐标，不画，   lineTo(x,y)定义线条结束坐标， stroke() 开始绘制</p>
+<p>​                            strokeStyle 定义线条颜色</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">定义开始坐标(0,0),和结束坐标(200,100),使用stroke开始绘制一条颜色为#FFF000的线条</span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="javascript">    <span class="keyword">var</span> c=<span class="built_in">document</span>.getElementById(<span class="string">"myCanvas"</span>);</span></span><br><span class="line"><span class="actionscript">    <span class="keyword">var</span> ctx=c.getContext(<span class="string">"2d"</span>);</span></span><br><span class="line"><span class="actionscript">    ctx.strokeStyle=<span class="string">"#FFF000"</span></span></span><br><span class="line">    ctx.moveTo(0,0);</span><br><span class="line">    ctx.lineTo(200,100);</span><br><span class="line">    ctx.stroke();</span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="3-绘制文本"><a href="#3-绘制文本" class="headerlink" title="3.绘制文本"></a>3.绘制文本</h3><p>主要方法： font-定义字体(字体大小，字体family)        fillText(text, x, y) - 绘制实心文本   strokeText(text,x,y) - 绘制空心文本</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> c=<span class="built_in">document</span>.getElementById(<span class="string">"myCanvas"</span>);</span><br><span class="line"><span class="keyword">var</span> ctx=c.getContext(<span class="string">"2d"</span>);</span><br><span class="line">ctx.font=<span class="string">"30px Arial"</span>;</span><br><span class="line">ctx.fillText(<span class="string">"Hello World"</span>,<span class="number">10</span>,<span class="number">50</span>);</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="4-渐变"><a href="#4-渐变" class="headerlink" title="4.渐变"></a>4.渐变</h3><p>主要通过两种方式：　createLinearGradient(<em>x,y,x1,y1</em>) - 创建线条渐变</p>
+<p>​                                    createRadialGradient(<em>x,y,r,x1,y1,r1</em>) - 创建一个径向/圆渐变</p>
+<p>​                addColorStop()方法指定颜色停止，参数使用坐标来描述，可以是0至1</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">var</span> c=<span class="built_in">document</span>.getElementById(<span class="string">"myCanvas"</span>);</span><br><span class="line"><span class="keyword">var</span> cxt=c.getContext(<span class="string">"2d"</span>);</span><br><span class="line"><span class="keyword">var</span> grd=cxt.createLinearGradient(<span class="number">0</span>,<span class="number">0</span>,<span class="number">175</span>,<span class="number">50</span>);</span><br><span class="line">grd.addColorStop(<span class="number">0</span>,<span class="string">"#FF0000"</span>);</span><br><span class="line">grd.addColorStop(<span class="number">1</span>,<span class="string">"#00FF00"</span>);</span><br><span class="line">cxt.fillStyle=grd;   <span class="comment">//设置填充颜色</span></span><br><span class="line">cxt.fillRect(<span class="number">0</span>,<span class="number">0</span>,<span class="number">175</span>,<span class="number">50</span>);  <span class="comment">//填充矩形</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="五、SVG"><a href="#五、SVG" class="headerlink" title="五、SVG"></a>五、SVG</h2><p>​        SVG 是一种使用 XML 描述 2D 图形的语言。</p>
+<p>​        SVG 指可伸缩矢量图形 (Scalable Vector Graphics)</p>
+<h2 id="六、地理定位"><a href="#六、地理定位" class="headerlink" title="六、地理定位"></a>六、地理定位</h2><p>​        　HTML5 Geolocation（地理定位）用于定位用户的位置。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">window</span>.navigator.geolocation &#123;</span><br><span class="line">    getCurrentPosition:  fn  用于获取当前的位置数据</span><br><span class="line">    watchPosition: fn  监视用户位置的改变</span><br><span class="line">    clearWatch: fn  清除定位监视</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>​            获取用户定位信息</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">navigator.geolocation.getCurrentPosition(</span><br><span class="line">    <span class="function"><span class="keyword">function</span>(<span class="params">pos</span>)</span>&#123;</span><br><span class="line">　　　　<span class="built_in">console</span>.log(<span class="string">'用户定位数据获取成功'</span>)</span><br><span class="line">　　　　<span class="comment">//console.log(arguments);</span></span><br><span class="line">　　　　<span class="built_in">console</span>.log(<span class="string">'定位时间：'</span>,pos.timestamp)</span><br><span class="line">　　　　<span class="built_in">console</span>.log(<span class="string">'经度：'</span>,pos.coords.longitude)</span><br><span class="line">　　　　<span class="built_in">console</span>.log(<span class="string">'纬度：'</span>,pos.coords.latitude)</span><br><span class="line">　　　　<span class="built_in">console</span>.log(<span class="string">'海拔：'</span>,pos.coords.altitude)</span><br><span class="line">　　　　<span class="built_in">console</span>.log(<span class="string">'速度：'</span>,pos.coords.speed)</span><br><span class="line"></span><br><span class="line">&#125;,    <span class="comment">//定位成功的回调</span></span><br><span class="line"><span class="function"><span class="keyword">function</span>(<span class="params">err</span>)</span>&#123; </span><br><span class="line">　　　　<span class="built_in">console</span>.log(<span class="string">'用户定位数据获取失败'</span>)</span><br><span class="line">　　　　<span class="comment">//console.log(arguments);</span></span><br><span class="line"></span><br><span class="line">&#125;        <span class="comment">//定位失败的回调</span></span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="七、拖放API"><a href="#七、拖放API" class="headerlink" title="七、拖放API"></a>七、拖放API</h2><h3 id="1-拖放的源对象-可发生移动的"><a href="#1-拖放的源对象-可发生移动的" class="headerlink" title="1.拖放的源对象(可发生移动的)"></a>1.拖放的源对象(可发生移动的)</h3><p>​        可以触发四个事件：dragstart：拖动开始，drag：拖动中，dragend：拖动结束</p>
+<p>​        整个过程的组成：<code>dragstart*1 + drag*n + dragend*1</code></p>
+<h3 id="2-拖放的目标对象-不会发生移动"><a href="#2-拖放的目标对象-不会发生移动" class="headerlink" title="2.拖放的目标对象(不会发生移动)"></a>2.拖放的目标对象(不会发生移动)</h3><p>​        可以触发四个事件：dragenter：拖动着进入，dragover：拖动着悬停，dragleave：拖动着离开，drop：释放</p>
+<p>​        整个拖动过程的组成1： <code>dragenter*1 + dragover*n + dragleave*1</code></p>
+<p>​        整个拖动过程的组成2： <code>dragenter*1 + dragover*n + drop*1</code></p>
+<h3 id="3-dataTransfer-用于数据传递的拖拉机对象："><a href="#3-dataTransfer-用于数据传递的拖拉机对象：" class="headerlink" title="3.dataTransfer:用于数据传递的拖拉机对象："></a>3.dataTransfer:用于数据传递的拖拉机对象：</h3><p>​         在拖动源对象事件中使用e.dataTransfer属性保存数据：</p>
+<p>​            e.dataTransfer.setData( k,  v )</p>
+<pre><code>在拖动目标对象事件中使用e.dataTransfer属性读取数据：</code></pre><p>​        var value = e.dataTransfer.getData( k )</p>
+<h3 id="4-示例"><a href="#4-示例" class="headerlink" title="4.示例"></a>4.示例</h3><p>​        小球来回移动</p>
+<p>​        注意点： 1.要想可以拖放，需设置draggable=”true”</p>
+<p>​                        2.drop的默认行为是链接形式打开，所以需要调用preventDefault()来阻止默认行为</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span> </span><br><span class="line"><span class="css"><span class="selector-id">#div1</span>, <span class="selector-id">#div2</span> &#123;</span></span><br><span class="line">    float: left;</span><br><span class="line">    width: 300px;</span><br><span class="line">    height: 300px;</span><br><span class="line"><span class="css">    <span class="selector-tag">border</span>: 2<span class="selector-tag">px</span> <span class="selector-tag">solid</span> <span class="selector-id">#FFF000</span>;</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="css"><span class="selector-id">#div3</span> &#123;</span></span><br><span class="line">    width: 50px;</span><br><span class="line">    height: 50px;</span><br><span class="line">    margin: 10px;</span><br><span class="line">    border-radius: 50%;</span><br><span class="line">    background-color: red;</span><br><span class="line">&#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"div1"</span> <span class="attr">ondrop</span>=<span class="string">"drop(event)"</span> <span class="attr">ondragover</span>=<span class="string">"allowDrop(event)"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"div3"</span> <span class="attr">draggable</span>=<span class="string">"true"</span> <span class="attr">ondragstart</span>=<span class="string">"drag(event)"</span> &gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span>   </span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"div2"</span> <span class="attr">ondrop</span>=<span class="string">"drop(event)"</span> <span class="attr">ondragover</span>=<span class="string">"allowDrop(event)"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="actionscript"><span class="function"><span class="keyword">function</span> <span class="title">allowDrop</span><span class="params">(e)</span> </span>&#123;</span></span><br><span class="line">    e.preventDefault();</span><br><span class="line">&#125;</span><br><span class="line"><span class="actionscript"><span class="function"><span class="keyword">function</span> <span class="title">drag</span><span class="params">(e)</span> </span>&#123;</span></span><br><span class="line"><span class="actionscript">    e.dataTransfer.setData(<span class="string">'aaa'</span>,e.target.id)</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="actionscript"><span class="function"><span class="keyword">function</span> <span class="title">drop</span><span class="params">(e)</span> </span>&#123;</span></span><br><span class="line">    e.preventDefault();</span><br><span class="line"><span class="actionscript">    <span class="keyword">var</span> data = e.dataTransfer.getData(<span class="string">'aaa'</span>);</span></span><br><span class="line"><span class="javascript">    e.target.appendChild(<span class="built_in">document</span>.getElementById(data))</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="八、Web-Worker"><a href="#八、Web-Worker" class="headerlink" title="八、Web Worker"></a>八、Web Worker</h2><p>​            web worker 是运行在后台的JavaScript，独立于其他脚本，不会影响页面的性能。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//1.检测浏览器是否支持web worker</span></span><br><span class="line"><span class="keyword">if</span>(<span class="keyword">typeof</span>(Worker)!==<span class="string">"undefined"</span>)</span><br><span class="line">  &#123;</span><br><span class="line">  <span class="comment">// Yes! Web worker support!</span></span><br><span class="line">  <span class="comment">// Some code.....</span></span><br><span class="line">  &#125;</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">  &#123;</span><br><span class="line">  <span class="comment">// Sorry! No Web Worker support..</span></span><br><span class="line">  &#125;</span><br><span class="line"><span class="comment">//2.创建 web worker 文件</span></span><br><span class="line"><span class="keyword">if</span>(<span class="keyword">typeof</span>(w)==<span class="string">"undefined"</span>)</span><br><span class="line">  &#123;</span><br><span class="line">  w=<span class="keyword">new</span> Worker(<span class="string">"demo_workers.js"</span>);</span><br><span class="line">  &#125;</span><br><span class="line"><span class="comment">//3.向 web worker 对象 添加"onmessage"事件监听器</span></span><br><span class="line">w.onmessage=<span class="function"><span class="keyword">function</span>(<span class="params">event</span>)</span>&#123;</span><br><span class="line"><span class="built_in">document</span>.getElementById(<span class="string">"result"</span>).innerHTML=event.data;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="comment">//4.终止 web worker </span></span><br><span class="line">w.terminate();</span><br></pre></td></tr></table></figure>
+
+<p>​        </p>
+<h2 id="九、Web-Storage"><a href="#九、Web-Storage" class="headerlink" title="九、Web Storage"></a>九、Web Storage</h2><p>​        localStorage：没有时间限制的数据存储</p>
+<p>​        sessionStorage：针对一个session的数据存储，当用户关闭浏览器后，数据会被删除</p>
+<p>​        相关API：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">保存数据：localStorage.setItem(key,value);</span><br><span class="line">读取数据：localStorage.getItem(key);</span><br><span class="line">删除单个数据：localStorage.removeItem(key);</span><br><span class="line">删除所有数据：localStorage.clear();</span><br><span class="line">得到某个索引的key：localStorage.key(index);</span><br><span class="line"><span class="comment">//sessionStorage一样</span></span><br></pre></td></tr></table></figure>
+
+
+<h2 id="十、WebSocket"><a href="#十、WebSocket" class="headerlink" title="十、WebSocket"></a>十、WebSocket</h2><p>​    WebSocket是HTML5提供的一种在单个TCP连接上进行的全双工通讯的协议。在WebSocket API中， 浏览器和服务器只需要做一个握手的动作，然后，服务器和浏览器之间就形成了一条快速通道。浏览器可以使用send()方法向服务器发送数据，并通过onmessage事件来接收服务器发来的数据</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> ws = <span class="keyword">new</span> WebSocket(<span class="string">"ws://localhost:9998/echo"</span>);     </span><br><span class="line">	ws.onopen = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function">     </span>&#123;</span><br><span class="line">        <span class="comment">// Web Socket 已连接上，使用 send() 方法发送数据</span></span><br><span class="line">        ws.send(<span class="string">"发送数据"</span>);</span><br><span class="line">        alert(<span class="string">"数据发送中..."</span>);</span><br><span class="line">     &#125;;</span><br><span class="line">      </span><br><span class="line">     ws.onmessage = <span class="function"><span class="keyword">function</span> (<span class="params">evt</span>) </span></span><br><span class="line"><span class="function">     </span>&#123; </span><br><span class="line">        <span class="keyword">var</span> received_msg = evt.data;</span><br><span class="line">        alert(<span class="string">"数据已接收..."</span>);</span><br><span class="line">     &#125;;</span><br><span class="line">      </span><br><span class="line">     ws.onclose = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function">     </span>&#123; </span><br><span class="line">        <span class="comment">// 关闭 websocket</span></span><br><span class="line">        alert(<span class="string">"连接已关闭..."</span>); </span><br><span class="line">     &#125;;</span><br></pre></td></tr></table></figure>
+
+
+
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/07/17/%E5%9F%BA%E7%A1%80/CSS/%E5%80%BC%E5%92%8C%E5%8D%95%E4%BD%8D/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="opopart">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Myblog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2020/07/17/%E5%9F%BA%E7%A1%80/CSS/%E5%80%BC%E5%92%8C%E5%8D%95%E4%BD%8D/" itemprop="url">值和单位</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
             
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-07-17T00:00:00+08:00">
+                2020-07-17
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%9F%BA%E7%A1%80/" itemprop="url" rel="index">
+                    <span itemprop="name">基础</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%9F%BA%E7%A1%80/CSS/" itemprop="url" rel="index">
+                    <span itemprop="name">CSS</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="RGB颜色"><a href="#RGB颜色" class="headerlink" title="RGB颜色"></a>RGB颜色</h3><p>​    整数范围0~255，百分数0%~100%；如果超出可取范围，会自动“剪裁”到最近的范围边界。</p>
+<h3 id="Web安全颜色"><a href="#Web安全颜色" class="headerlink" title="Web安全颜色"></a>Web安全颜色</h3><p>​    20%、51、十六进制的33</p>
+<p>​    不同平台有着不同的调色板，不同浏览器也有着自己的调色板，通过设置安全颜色，使其称成为标准</p>
+<h3 id="长度单位"><a href="#长度单位" class="headerlink" title="长度单位"></a>长度单位</h3><p>​    em: 1个‘em’等于一种给定字体的font-size值</p>
+<p>​    rem：font-size值基于根源素设置，大多数情况下为html元素</p>
+<p>​    ex：所用字体中小写x的高度</p>
+<p>​    vh：viewport高度的1/100</p>
+<p>​    vw：viewport宽度的1/100</p>
+<p>​    vmin：本次高度和宽度的最大值的1/100</p>
+<p>​    vmin：本次高度和宽度的最小值的1/100，例，如果浏览器高度为1100px,宽700px,则1vmax = 11px, 1vmin = 7px;</p>
+<p>​    </p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/07/17/%E5%9F%BA%E7%A1%80/CSS/%E5%8A%A8%E7%94%BB/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="opopart">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Myblog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2020/07/17/%E5%9F%BA%E7%A1%80/CSS/%E5%8A%A8%E7%94%BB/" itemprop="url">动画</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-07-17T00:00:00+08:00">
+                2020-07-17
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%9F%BA%E7%A1%80/" itemprop="url" rel="index">
+                    <span itemprop="name">基础</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%9F%BA%E7%A1%80/CSS/" itemprop="url" rel="index">
+                    <span itemprop="name">CSS</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="一、transition-过渡"><a href="#一、transition-过渡" class="headerlink" title="一、transition(过渡)"></a>一、transition(过渡)</h2><p>​            transition作用在于指定变化所需的时间</p>
+<p>​            transition：transition-property || transition-duration || transition-timing-function || transition-delay</p>
+<h3 id="1-transition-property"><a href="#1-transition-property" class="headerlink" title="1.transition-property"></a>1.transition-property</h3><p>​            指定变化的属性，如height、width、background-color、opacity</p>
+<p>​            值： none || all(默认值) || property(用户的属性列表，逗号隔开)</p>
+<h3 id="2-transition-duration"><a href="#2-transition-duration" class="headerlink" title="2.transition-duration"></a>2.transition-duration</h3><p>​            transition-duration： time    //单位为秒或者毫秒，默认为0</p>
+<h3 id="3-transition-timing-function"><a href="#3-transition-timing-function" class="headerlink" title="3.transition-timing-function"></a>3.transition-timing-function</h3><p>​            transition-timing-function: linear || ease || ease-in || ease-out || ease-in-out || cubic- bezier(n,n,n,n);</p>
+<p>​            liner：规定以相同速度开始至结束的过渡效果。</p>
+<p>​            ease：规定慢速开始，然后变快，然后慢速结束的过渡效果。</p>
+<p>​            ease-in：加速</p>
+<p>​            ease-out：减速</p>
+<p>​            ease-in-out：规定以慢速开始和结束的过渡效果。</p>
+<p>​            cubic-beizer(n,n,n,n)：贝塞尔曲线</p>
+<h3 id="4-transition-delay"><a href="#4-transition-delay" class="headerlink" title="4.transition-delay"></a>4.transition-delay</h3><p>​            指定延时时间</p>
+<h3 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h3><p>​        transition需要明确知道，开始状态和结束状态的具体值</p>
+<p>​        transition需要事件触发，所以没法在网页加载时自动发生</p>
+<p>​        transition是一次性的，不能重复发生，除非一再触发。</p>
+<p>​        transition只能定义开始状态和结束状态，不能定义中间状态，也就是说只有两个状态。</p>
+<h2 id="二、Ainmation"><a href="#二、Ainmation" class="headerlink" title="二、Ainmation"></a>二、Ainmation</h2><p>​        animation: animation-name || animation-duration || animation-timing-function || animation-delay || animation-        iteration-count || animation-direction</p>
+<h3 id="1-animation-name"><a href="#1-animation-name" class="headerlink" title="1.animation-name"></a>1.animation-name</h3><p>​            规定需要绑定到选择器的 keyframe 名称</p>
+<h3 id="2-animation-duration"><a href="#2-animation-duration" class="headerlink" title="2.animation-duration"></a>2.animation-duration</h3><p>​            规定完成动画所花费的时间，以秒或毫秒计</p>
+<h3 id="3-animation-timing-function"><a href="#3-animation-timing-function" class="headerlink" title="3.animation-timing-function"></a>3.animation-timing-function</h3><p>​            规定动画的速度曲线</p>
+<h3 id="4-animation-delay"><a href="#4-animation-delay" class="headerlink" title="4.animation-delay"></a>4.animation-delay</h3><p>​            规定在动画开始之前的延迟，默认值为0</p>
+<h3 id="5-animation-iteration-count"><a href="#5-animation-iteration-count" class="headerlink" title="5.animation-iteration-count"></a>5.animation-iteration-count</h3><p>​            规定动画应该播放的次数，默认值为1。</p>
+<p>​            infinite：无限次</p>
+<h3 id="6-animation-direction"><a href="#6-animation-direction" class="headerlink" title="6.animation-direction"></a>6.animation-direction</h3><p>​            规定是否应该轮流反向播放动画，默认值是正向</p>
+<p>​            normal：默认，正向</p>
+<p>​            alternate：正反交替，比如一个动画重复三次，则先正向，后反向，再正向</p>
+<p>​            reverse：反向</p>
+<p>​            alternate-reverse：先反向，再正反交替</p>
+<h3 id="7-animation-fill-mode"><a href="#7-animation-fill-mode" class="headerlink" title="7.animation-fill-mode"></a>7.animation-fill-mode</h3><p>​            animation-fill-mode: none || forwards || backwards || both</p>
+<p>​            none：默认，返回动画未开始的时候</p>
+<p>​            forwards：动画完成后，保持最后一帧</p>
+<p>​            backwards：在 <code>animation-delay</code>所指定的一段时间内，在动画显示之前，应用开始属性值（在第一个关键帧中定    义）</p>
+<p>​            both:根据<code>animation-direction</code>轮流应用forwards和backwards规则。</p>
+<h3 id="8-animation-play-state"><a href="#8-animation-play-state" class="headerlink" title="8.animation-play-state"></a>8.animation-play-state</h3><p>​            paused |  running</p>
+<h2 id="三、transform"><a href="#三、transform" class="headerlink" title="三、transform"></a>三、transform</h2><h3 id="translate"><a href="#translate" class="headerlink" title="translate"></a>translate</h3><p>​        transform: translate(50px,100px)   //向右移50px,向下移动100px</p>
+<h3 id="rotate"><a href="#rotate" class="headerlink" title="rotate"></a>rotate</h3><p>​        rotate(100deg)   //顺时针旋转100°， 负值则为逆时针旋转</p>
+<h3 id="scale"><a href="#scale" class="headerlink" title="scale"></a>scale</h3><p>​        transform: scale(2,4);  宽度转为原始尺寸的两倍，高度四倍</p>
+<h3 id="skew"><a href="#skew" class="headerlink" title="skew"></a>skew</h3><p>​        transform: skew(30deg,20deg);   //沿x轴正方向旋转30°，沿y轴正方向旋转20°</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/07/17/%E5%9F%BA%E7%A1%80/CSS/%E7%BB%93%E6%9E%84%E5%92%8C%E5%B1%82%E5%8F%A0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="opopart">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Myblog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2020/07/17/%E5%9F%BA%E7%A1%80/CSS/%E7%BB%93%E6%9E%84%E5%92%8C%E5%B1%82%E5%8F%A0/" itemprop="url">结构和层叠</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-07-17T00:00:00+08:00">
+                2020-07-17
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%9F%BA%E7%A1%80/" itemprop="url" rel="index">
+                    <span itemprop="name">基础</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%9F%BA%E7%A1%80/CSS/" itemprop="url" rel="index">
+                    <span itemprop="name">CSS</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="css引入"><a href="#css引入" class="headerlink" title="css引入"></a>css引入</h3><h4 id="1-内联样式"><a href="#1-内联样式" class="headerlink" title="1.内联样式"></a>1.内联样式</h4><p>​        直接在HTML标签中设置样式</p>
+<h4 id="2-内部样式表"><a href="#2-内部样式表" class="headerlink" title="2.内部样式表"></a>2.内部样式表</h4><p>​        在head标签中的style标签中写样式</p>
+<h4 id="3-外部样式表"><a href="#3-外部样式表" class="headerlink" title="3.外部样式表"></a>3.外部样式表</h4><p>​        1.链接式：使用<link>标签</p>
+<h3 id="特殊性"><a href="#特殊性" class="headerlink" title="特殊性"></a>特殊性</h3><p>​        权重：</p>
+<p>​        !important 权重最高，例：p.dark { color: #333  !important; }</p>
+<p>​        内联样式 1000，</p>
+<p>​        id选择器   100，</p>
+<p>​        类属性值，属性选择或伪类 10，</p>
+<p>​        元素和伪元素 1，</p>
+<p>​        结合符和通配选择器 0，</p>
+<h3 id="继承-无特殊性，比权重0还垃圾"><a href="#继承-无特殊性，比权重0还垃圾" class="headerlink" title="继承(无特殊性，比权重0还垃圾 )"></a>继承(无特殊性，比权重0还垃圾 )</h3><p>​        一般都是向下传播，但有一个向上传播的例外：应用到body元素的背景样式可以传递到html元素</p>
+<h4 id="可继承的属性"><a href="#可继承的属性" class="headerlink" title="可继承的属性"></a>可继承的属性</h4><p>​                1.字体：font(字体组合)、font-family(字体系列)、font-weight(字体粗细)、font-size(字体尺寸)、font-style(字体风格)、font-variant(小写转大写，但是是小型的大写字母)、</p>
+<p>​                2.文本：text-indent(文本缩进)、text-align(文本水平对齐)、line-height(行高)、word-spacing(字体间距)、letter-spacing(字符间距)、text-transform(文本大小写)、direction(文本书写方向)、color(字体颜色)</p>
+<p>​                3.元素可见性：visibility</p>
+<p>​                4.表格布局属性：caption-side、border-collapse、border-spacing、empty-cells、table-layout</p>
+<p>​                5.列表布局属性：list-style-type、list-style-image、list-style-position、list-style</p>
+<p>​                6.光标属性：cursor</p>
+<h3 id="层叠"><a href="#层叠" class="headerlink" title="层叠"></a>层叠</h3><p>​        权重由大到小排序</p>
+<p>​            1.读者的重要声明</p>
+<p>​            2.创作人员的重要声明</p>
+<p>​            3.创作人员的正常声明</p>
+<p>​            4.读者的正常声明</p>
+<p>​            5.用户代理声明</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/07/17/%E5%9F%BA%E7%A1%80/CSS/%E9%80%89%E6%8B%A9%E5%99%A8/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="opopart">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Myblog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2020/07/17/%E5%9F%BA%E7%A1%80/CSS/%E9%80%89%E6%8B%A9%E5%99%A8/" itemprop="url">选择器</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-07-17T00:00:00+08:00">
+                2020-07-17
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%9F%BA%E7%A1%80/" itemprop="url" rel="index">
+                    <span itemprop="name">基础</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%9F%BA%E7%A1%80/CSS/" itemprop="url" rel="index">
+                    <span itemprop="name">CSS</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="元素选择器"><a href="#元素选择器" class="headerlink" title="元素选择器"></a>元素选择器</h3><p>​        如：html、body、h1、a、p</p>
+<h3 id="类选择器"><a href="#类选择器" class="headerlink" title="类选择器"></a>类选择器</h3><p>​        前面加.</p>
+<h3 id="ID选择器"><a href="#ID选择器" class="headerlink" title="ID选择器"></a>ID选择器</h3><p>​        前面加#</p>
+<h3 id="属性选择器"><a href="#属性选择器" class="headerlink" title="属性选择器"></a>属性选择器</h3><h4 id="一、简单属性选择"><a href="#一、简单属性选择" class="headerlink" title="一、简单属性选择"></a>一、简单属性选择</h4><p>​                如果希望选择有某个属性的元素，而不论属性的值是什么，可以选用简单属性选择</p>
+<p>​                如：<code>h1[class] {}</code>   选择有class属性的所以h1元素</p>
+<p>​                        <code>*[title] {}</code>    选择所有含有title属性的元素</p>
+<p>​                         <code>a[href][title] {}</code> 选择含有href和title属性的所有a标签</p>
+<h4 id="二、根据具体属性值选择"><a href="#二、根据具体属性值选择" class="headerlink" title="二、根据具体属性值选择"></a>二、根据具体属性值选择</h4><p>​                范围更小，更具体</p>
+<p>​                如：<code>a[href=&quot;xxx&quot;] {}</code>   选择选择href链接为xxx的所有a元素</p>
+<h3 id="三、根据部分属性值匹配"><a href="#三、根据部分属性值匹配" class="headerlink" title="三、根据部分属性值匹配"></a>三、根据部分属性值匹配</h3><p>​                [class~=’waring’]  ： 选择class属性中包含waring的元素</p>
+<p>​                [class^=’bar’]        ：选择class属性以‘bar’开头的所有元素</p>
+<p>​                [class$=’bar’]        ：选择class属性以’bar’结尾的所有元素</p>
+<p>​                [class*=’bar’]        ：选择class属性包含字串’bar’的所有元素</p>
+<h3 id="四、特定属性选择"><a href="#四、特定属性选择" class="headerlink" title="四、特定属性选择"></a>四、特定属性选择</h3><p>​                *[lang|=’en’] {}  ：选择lang属性等于en或者en-开头的所有元素</p>
+<p>​            </p>
+<h3 id="后代选择器"><a href="#后代选择器" class="headerlink" title="后代选择器"></a>后代选择器</h3><p>​                用空格隔开</p>
+<p>​                如： h1 em {}  ：  表示作为h1元素后代的任何em元素</p>
+<h4 id="选择子元素"><a href="#选择子元素" class="headerlink" title="选择子元素"></a>选择子元素</h4><p>​                        某些情况下并不想选择一个任意的后代元素，而只选择某个元素的下一代，仅仅指下一层(文档的树结构)</p>
+<p>​                        用 &gt; 表示</p>
+<p>​                        如 h1 &gt; strong {}  对一个起效果，对第二个不起效果</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span></span><br><span class="line">    aaa<span class="tag">&lt;<span class="name">strong</span>&gt;</span> bbbb<span class="tag">&lt;/<span class="name">strong</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span></span><br><span class="line">    aaaa<span class="tag">&lt;<span class="name">em</span>&gt;</span><span class="tag">&lt;<span class="name">strong</span>&gt;</span><span class="tag">&lt;/<span class="name">strong</span>&gt;</span><span class="tag">&lt;/<span class="name">em</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="选择相邻兄弟元素"><a href="#选择相邻兄弟元素" class="headerlink" title="选择相邻兄弟元素"></a>选择相邻兄弟元素</h4><p>​                        选择紧接在另一个元素后的元素，而且二者有相同的父元素， 使用 + 号</p>
+<h3 id="伪类选择器"><a href="#伪类选择器" class="headerlink" title="伪类选择器"></a>伪类选择器</h3><p>​            可以为文档中不一定具体存在的结构指定样式</p>
+<p>​            链接伪类：   </p>
+<p>​                    1.<code>:link</code>  任何超链接，包括已访问和为访问的超链接</p>
+<p>​                    2.<code>:visted</code> 已访问地址超链接的所有锚</p>
+<p>​            动态伪类：</p>
+<p>​                    1.<code>:focus</code>  指示当前拥有输入焦点的元素</p>
+<p>​                    2.<code>:hover</code> 鼠标停留时</p>
+<p>​                    3.<code>:active</code> 激活时</p>
+<p>​            <code>:first-child</code>  选择第一个子元素</p>
+<p>​            <code>:nth-child(n)</code>  选择第n个子元素</p>
+<p>​            <code>:nth-of-type(n)</code>  选择第n个子元素，注意，是在一堆兄弟元素中选择相同标记元素中的第n个</p>
+<h3 id="伪元素选择器-用"><a href="#伪元素选择器-用" class="headerlink" title="伪元素选择器  用 ::"></a>伪元素选择器  用 ::</h3><p>​                伪元素能够在文档中插入假想的元素，从而达到某种效果。</p>
+<p>​                <code>:first-letter</code>  首字母样式，只能用于标记或段落之间的块级元素</p>
+<p>​                <code>:first-line</code>  首行样式，只能用于标记或段落之间的块级元素</p>
+<p>​                <code>:before {content: &quot;&quot;; color: silver}</code>  在某个元素前添加内容，</p>
+<p>​                <code>:after {content: &quot;&quot;; color: silver}</code>  在某个元素后面添加内容；</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/07/17/%E5%9F%BA%E7%A1%80/CSS/%E5%AD%97%E4%BD%93/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="opopart">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Myblog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2020/07/17/%E5%9F%BA%E7%A1%80/CSS/%E5%AD%97%E4%BD%93/" itemprop="url">字体</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-07-17T00:00:00+08:00">
+                2020-07-17
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%9F%BA%E7%A1%80/" itemprop="url" rel="index">
+                    <span itemprop="name">基础</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%9F%BA%E7%A1%80/CSS/" itemprop="url" rel="index">
+                    <span itemprop="name">CSS</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>font-family：字体系列</p>
+<p>font-weight：字体加粗，100~900， normal = 400， bold = 700</p>
+<p>​                     字体更粗(bolder)：(100<del>300) -&gt; 400, (400</del>600) -&gt; 700, 700 -&gt; 800, 800 -&gt; 900</p>
+<p>​                     字体更细(lighter):  (700<del>900) -&gt; 400, (400</del>600) -&gt; 100, 300 -&gt; 200, 200 -&gt; 100</p>
+<p>font-size：值xx-small、x-small、small、medium、large、x-large、xx-large、smaller、larger</p>
+<p>font-style：italic(斜体) | oblique(倾斜) | normal | inherit</p>
+<p>font-variant: 字体变形，值：small-caps(小型大写字母) | normal</p>
+<p>text-align：left | center | right | justify(两端对齐) | inherit, 只能用于块级元素</p>
+<p>line-height：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">line-height值从父元素继承时，计算是在父元素计算</span><br><span class="line">body &#123; font-size: 10px&#125;</span><br><span class="line">div &#123; line-height: 1em &#125;</span><br><span class="line">p &#123; font-size: 18px&#125;</span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span></span><br><span class="line">        此行高为1opx</span><br><span class="line">    <span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line">如果父元素行高设置为数字，则子元素根据数字计算</span><br><span class="line">div &#123; line-height：1.5 &#125;</span><br><span class="line">p &#123; font-size：18px&#125;</span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span></span><br><span class="line">        此行高为18x1.5px</span><br><span class="line">    <span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>vertical-align：baseline | sub | super | middle | bottom | top | 百分数(根据行高) | 数值(正数，相对基线上升，反之，下降)</p>
+<p>word-spacing：字间隔</p>
+<p>letter-spacing： 字母间隔</p>
+<p>text-transform：文本转换 uppercase | lowercase | capitalize(每个单词的首字母) | none</p>
+<p>text-decoration：none | underline(下划线) | overline(上划线) | line-through(贯穿线) ， 不能继承</p>
+<p>text-shadow： <color>  <length> <length> <length>  : 第一个len向右偏移，第二个len向下偏移，第三个模糊半径</p>
+<p>white-space： </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">值			空白符			换行符			自动换行</span><br><span class="line">pre-line	  合并		   保留		    允许</span><br><span class="line">normal		  合并		   忽略 		    允许</span><br><span class="line">nowrap		  合并		   忽略		    不允许</span><br><span class="line">pre 		  保留		   保留			不允许</span><br><span class="line">pre-wrap	   保留		    保留			允许</span><br></pre></td></tr></table></figure>
+
+<p>direction：ltr(左到右) | rtl(右到左)</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/07/16/%E5%9F%BA%E7%A1%80/Javascript/%E5%AF%B9%E8%B1%A1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="opopart">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Myblog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2020/07/16/%E5%9F%BA%E7%A1%80/Javascript/%E5%AF%B9%E8%B1%A1/" itemprop="url">js对象</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-07-16T15:28:47+08:00">
+                2020-07-16
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%9F%BA%E7%A1%80/" itemprop="url" rel="index">
+                    <span itemprop="name">基础</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%9F%BA%E7%A1%80/JavaScript/" itemprop="url" rel="index">
+                    <span itemprop="name">JavaScript</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="一、对象声明"><a href="#一、对象声明" class="headerlink" title="一、对象声明"></a>一、对象声明</h2><h3 id="1-字面量"><a href="#1-字面量" class="headerlink" title="1.字面量"></a>1.字面量</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> test = &#123;&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-构造函数"><a href="#2-构造函数" class="headerlink" title="2.构造函数"></a>2.构造函数</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> test = <span class="keyword">new</span> <span class="built_in">Object</span>(&#123;&#125;)</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-内置方法"><a href="#3-内置方法" class="headerlink" title="3.内置方法"></a>3.内置方法</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> test = <span class="built_in">Object</span>.create(&#123;<span class="attr">x</span>:<span class="number">123</span>,<span class="attr">y</span>:<span class="number">345</span>&#125;)</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="二、对象属性"><a href="#二、对象属性" class="headerlink" title="二、对象属性"></a>二、对象属性</h2><h3 id="1-属性分类"><a href="#1-属性分类" class="headerlink" title="1.属性分类"></a>1.属性分类</h3><h4 id="1-数据属性的四个特性：configurable-可配置-、enumerable-可枚举-、writable-可修改-、value-属性值"><a href="#1-数据属性的四个特性：configurable-可配置-、enumerable-可枚举-、writable-可修改-、value-属性值" class="headerlink" title="1.数据属性的四个特性：configurable(可配置)、enumerable(可枚举)、writable(可修改)、value(属性值)"></a>1.数据属性的四个特性：configurable(可配置)、enumerable(可枚举)、writable(可修改)、value(属性值)</h4><h4 id="2-访问器属性的两个特性：get、set"><a href="#2-访问器属性的两个特性：get、set" class="headerlink" title="2.访问器属性的两个特性：get、set"></a>2.访问器属性的两个特性：get、set</h4><h4 id="3-内部属性："><a href="#3-内部属性：" class="headerlink" title="3.内部属性："></a>3.内部属性：</h4><p>​        用[[]] 包裹， 如 [[prototype]] ，可以用Object.getPrototypeof()访问</p>
+<h3 id="2-属性描述符"><a href="#2-属性描述符" class="headerlink" title="2.属性描述符"></a>2.属性描述符</h3><p>定义：将一个属性的所有特性编码成一个对象返回</p>
+<p>类别：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//数据属性</span></span><br><span class="line"><span class="keyword">var</span> o, d;</span><br><span class="line">o = &#123; <span class="attr">bar</span>: <span class="number">42</span> &#125;;</span><br><span class="line">d = <span class="built_in">Object</span>.getOwnPropertyDescriptor(o, <span class="string">"bar"</span>);</span><br><span class="line"><span class="comment">// d &#123;</span></span><br><span class="line"><span class="comment">//   configurable: true,</span></span><br><span class="line"><span class="comment">//   enumerable: true,</span></span><br><span class="line"><span class="comment">//   value: 42,</span></span><br><span class="line"><span class="comment">//   writable: true</span></span><br><span class="line"><span class="comment">// &#125;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//访问器属性</span></span><br><span class="line">o = &#123; <span class="keyword">get</span> foo() &#123; <span class="keyword">return</span> <span class="number">17</span>; &#125; &#125;;</span><br><span class="line">d = <span class="built_in">Object</span>.getOwnPropertyDescriptor(o, <span class="string">"foo"</span>);</span><br><span class="line"><span class="comment">// d &#123;</span></span><br><span class="line"><span class="comment">//   configurable: true,</span></span><br><span class="line"><span class="comment">//   enumerable: true,</span></span><br><span class="line"><span class="comment">//   get: /*the getter function*/,</span></span><br><span class="line"><span class="comment">//   set: undefined</span></span><br><span class="line"><span class="comment">// &#125;</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="3-属性描述符的默认值"><a href="#3-属性描述符的默认值" class="headerlink" title="3.属性描述符的默认值"></a>3.属性描述符的默认值</h3><h4 id="1-访问存在的属性"><a href="#1-访问存在的属性" class="headerlink" title="1.访问存在的属性"></a>1.访问存在的属性</h4><table>
+<thead>
+<tr>
+<th>特性名</th>
+<th>默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>value</td>
+<td>对应属性值</td>
+</tr>
+<tr>
+<td>get</td>
+<td>对应属性值</td>
+</tr>
+<tr>
+<td>set</td>
+<td>undefined</td>
+</tr>
+<tr>
+<td>writable</td>
+<td>true</td>
+</tr>
+<tr>
+<td>enumerable</td>
+<td>true</td>
+</tr>
+<tr>
+<td>configurable</td>
+<td>true</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="2-访问不存在的属性"><a href="#2-访问不存在的属性" class="headerlink" title="2.访问不存在的属性"></a>2.访问不存在的属性</h4><table>
+<thead>
+<tr>
+<th>特性名</th>
+<th>默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>value</td>
+<td>undefined</td>
+</tr>
+<tr>
+<td>get</td>
+<td>undefined</td>
+</tr>
+<tr>
+<td>set</td>
+<td>undefined</td>
+</tr>
+<tr>
+<td>writable</td>
+<td>false</td>
+</tr>
+<tr>
+<td>enumerable</td>
+<td>false</td>
+</tr>
+<tr>
+<td>configurable</td>
+<td>false</td>
+</tr>
+</tbody>
+</table>
+
+
+
+<h3 id="4-描述符属性的使用规则"><a href="#4-描述符属性的使用规则" class="headerlink" title="4.描述符属性的使用规则"></a>4.描述符属性的使用规则</h3><p>​    get，set    与  wirable，value   不能共存</p>
+<h3 id="5-判断对象属性"><a href="#5-判断对象属性" class="headerlink" title="5.判断对象属性"></a>5.判断对象属性</h3><p>in：属性在指定对象或其原型链上，返回true</p>
+<p>hasOwnProperty()：判断自身属性</p>
+<p>.或[]：对象或原型链上不存在该属性，则会返回undefined</p>
+<h3 id="6-遍历"><a href="#6-遍历" class="headerlink" title="6.遍历"></a>6.遍历</h3><table>
+<thead>
+<tr>
+<th>方法</th>
+<th>特性</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>for ... in</td>
+<td>遍历对象自身的和继承的可枚举属性(不含Symbol属性)</td>
+</tr>
+<tr>
+<td>Object.keys(obj)</td>
+<td>返回一个数组,包括对象自身的(不含继承的)所有可枚举属性(不含Symbol属性)</td>
+</tr>
+<tr>
+<td>Object.getOwnPropertyNames(obj)</td>
+<td>返回一个数组,包括对象自身的所有可枚举和不可枚举属性(不含Symbol属性)</td>
+</tr>
+<tr>
+<td>Object.getOwnPropertySymbols(obj)</td>
+<td>返回一个数组,包含对象自身的所有Symbol属性</td>
+</tr>
+<tr>
+<td>Reflect.ownKeys(obj)</td>
+<td>返回一个数组,包含对象自身的所有(不枚举、可枚举和Symbol)属性</td>
+</tr>
+<tr>
+<td>Reflect.enumerate(obj)</td>
+<td>返回一个Iterator对象,遍历对象自身的和继承的所有可枚举属性(不含Symbol属性)</td>
+</tr>
+</tbody>
+</table>
+
+
+
+<h3 id="7-深浅拷贝"><a href="#7-深浅拷贝" class="headerlink" title="7.深浅拷贝"></a>7.深浅拷贝</h3><h4 id="1-浅拷贝"><a href="#1-浅拷贝" class="headerlink" title="1.浅拷贝"></a>1.浅拷贝</h4><h5 id="11-Object-assign-target-…sources"><a href="#11-Object-assign-target-…sources" class="headerlink" title="11.Object.assign(target, …sources)"></a>11.Object.assign(target, …sources)</h5><p>​        将所有可枚举属性的值从一个或多个源对象复制到目标对象。它将返回目标对象</p>
+<p>​        继承属性不可枚举属性是不能拷贝的</p>
+<p>​        原始类型会被包装为对象</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> v1 = <span class="string">"abc"</span>;</span><br><span class="line"><span class="keyword">const</span> v2 = <span class="literal">true</span>;</span><br><span class="line"><span class="keyword">const</span> v3 = <span class="number">10</span>;</span><br><span class="line"><span class="keyword">const</span> v4 = <span class="built_in">Symbol</span>(<span class="string">"foo"</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> obj = <span class="built_in">Object</span>.assign(&#123;&#125;, v1, <span class="literal">null</span>, v2, <span class="literal">undefined</span>, v3, v4); </span><br><span class="line"><span class="comment">// 原始类型会被包装，null 和 undefined 会被忽略。</span></span><br><span class="line"><span class="comment">// 注意，只有字符串的包装对象才可能有自身可枚举属性。</span></span><br><span class="line"><span class="built_in">console</span>.log(obj); <span class="comment">// &#123; "0": "a", "1": "b", "2": "c" &#125;</span></span><br></pre></td></tr></table></figure>
+
+<p>​        拷贝访问器</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> obj = &#123;</span><br><span class="line">  foo: <span class="number">1</span>,</span><br><span class="line">  <span class="keyword">get</span> bar() &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">2</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> copy = <span class="built_in">Object</span>.assign(&#123;&#125;, obj); </span><br><span class="line"><span class="built_in">console</span>.log(copy); <span class="comment">// &#123; foo: 1, bar: 2 &#125; copy.bar的值来自obj.bar的getter函数的返回值</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h5 id="22-Array-prototype-concat"><a href="#22-Array-prototype-concat" class="headerlink" title="22.Array.prototype.concat"></a>22.Array.prototype.concat</h5><h5 id="33-Array-prototype-slice"><a href="#33-Array-prototype-slice" class="headerlink" title="33.Array.prototype.slice()"></a>33.Array.prototype.slice()</h5><h4 id="2-深拷贝"><a href="#2-深拷贝" class="headerlink" title="2.深拷贝"></a>2.深拷贝</h4><h5 id="21-JSON-parse-JSON-stringify"><a href="#21-JSON-parse-JSON-stringify" class="headerlink" title="21.JSON.parse(JSON.stringify())"></a>21.JSON.parse(JSON.stringify())</h5><p>​              不能处理函数</p>
+<h5 id="22-手写递归"><a href="#22-手写递归" class="headerlink" title="22.手写递归"></a>22.手写递归</h5><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">deepCopy</span>(<span class="params">obj</span>)</span>&#123;</span><br><span class="line">    <span class="comment">//判断是否是简单数据类型，</span></span><br><span class="line">    <span class="keyword">if</span>(<span class="keyword">typeof</span> obj == <span class="string">"object"</span>)&#123;</span><br><span class="line">        <span class="comment">//复杂数据类型</span></span><br><span class="line">        <span class="keyword">var</span> result = obj.constructor == <span class="built_in">Array</span> ? [] : &#123;&#125;;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">let</span> i <span class="keyword">in</span> obj)&#123;</span><br><span class="line">            result[i] = <span class="keyword">typeof</span> obj[i] == <span class="string">"object"</span> ? deepCopy(obj[i]) : obj[i];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;<span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="comment">//简单数据类型 直接 == 赋值</span></span><br><span class="line">        <span class="keyword">var</span> result = obj;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> result;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="创建对象的多种方式"><a href="#创建对象的多种方式" class="headerlink" title="创建对象的多种方式"></a>创建对象的多种方式</h3><blockquote>
+<p>原始的创建对象方式会产生大量的重复代码</p>
+</blockquote>
+<h4 id="①工厂模式"><a href="#①工厂模式" class="headerlink" title="①工厂模式"></a>①工厂模式</h4><blockquote>
+<p>抽象了创建具体对象的过程</p>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">obj</span>(<span class="params">name, age</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">let</span> o = <span class="keyword">new</span> <span class="built_in">Object</span>();</span><br><span class="line">  o.name = name;</span><br><span class="line">  o.age = age;</span><br><span class="line">  o.say = <span class="function"><span class="params">()</span> =&gt;</span> &#123;&#125;;</span><br><span class="line">  <span class="keyword">return</span> o;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//解决了创建多个相似对象的问题</span></span><br><span class="line"><span class="comment">//没有解决对象识别的问题</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="②构造函数模式"><a href="#②构造函数模式" class="headerlink" title="②构造函数模式"></a>②构造函数模式</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Person</span>(<span class="params">name, age</span>) </span>&#123;</span><br><span class="line">	<span class="keyword">this</span>.name = name;</span><br><span class="line">	<span class="keyword">this</span>.age = age;</span><br><span class="line">	<span class="keyword">this</span>.say = <span class="function"><span class="params">()</span> =&gt;</span> &#123;&#125;;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 没有显示的创建对象</span></span><br><span class="line"><span class="comment">// 直接将属性和方法赋给了this对象</span></span><br><span class="line"><span class="comment">// 没有return语句</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="③原型模式"><a href="#③原型模式" class="headerlink" title="③原型模式"></a>③原型模式</h4><blockquote>
+<p>可以让所有实例共享原型对象的属性和方法</p>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Person</span>(<span class="params"></span>) </span>&#123;&#125;</span><br><span class="line">Person.name = <span class="string">'asd'</span>;</span><br><span class="line">Person.age = <span class="number">32</span>;</span><br><span class="line">Person.say = <span class="function"><span class="params">()</span> =&gt;</span> &#123;&#125;;</span><br></pre></td></tr></table></figure>
+
+<h4 id="④构造函数-原型"><a href="#④构造函数-原型" class="headerlink" title="④构造函数 + 原型"></a>④构造函数 + 原型</h4><blockquote>
+<p>结合两种优点， 构造函数定义实例自己的属性，原型定义实例共享的属性</p>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Person</span>(<span class="params">name, age</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">this</span>.name = name;</span><br><span class="line">  <span class="keyword">this</span>.age = age;</span><br><span class="line">&#125;</span><br><span class="line">Person.prototype = &#123;</span><br><span class="line">  <span class="keyword">constructor</span>: Person,</span><br><span class="line">  say: () =&gt; &#123;&#125;,</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="⑤寄生构造函数模式"><a href="#⑤寄生构造函数模式" class="headerlink" title="⑤寄生构造函数模式"></a>⑤寄生构造函数模式</h4><blockquote>
+<p>除了使用构造函数中的this， 其他和工厂模式相似</p>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Person</span>(<span class="params">name, age</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">let</span> o = <span class="keyword">new</span> <span class="built_in">Object</span>();</span><br><span class="line">  o.name = name;</span><br><span class="line">  o.age = age;</span><br><span class="line">  o,say = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123; alert(<span class="keyword">this</span>.name) &#125;;</span><br><span class="line">  <span class="keyword">return</span> o;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
           
         
       
@@ -399,7 +1833,7 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <p class="site-author-name" itemprop="name">John Doe</p>
+              <p class="site-author-name" itemprop="name">opopart</p>
               <p class="site-description motion-element" itemprop="description"></p>
           </div>
 
@@ -408,16 +1842,34 @@
             
               <div class="site-state-item site-state-posts">
               
-                <a href="/archives/%20%7C%7C%20archive">
+                <a href="/archives">
               
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">7</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
             
 
             
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
 
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
             
 
           </nav>
@@ -455,7 +1907,7 @@
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">John Doe</span>
+  <span class="author" itemprop="copyrightHolder">opopart</span>
 
   
 </div>
@@ -469,7 +1921,7 @@
 
 
 
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
 
 
 
@@ -516,6 +1968,8 @@
   
 
 
+  
+
 
 
 
@@ -556,6 +2010,11 @@
     <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
   
 
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
 
   
 
@@ -568,6 +2027,13 @@
 
   
   
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
 
   
 

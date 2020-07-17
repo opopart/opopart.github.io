@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+
+
+
+
+<html class="theme-next gemini" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="CSS," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="一、transition(过渡)​            transition作用在于指定变化所需的时间 ​            transition：transition-property || transition-duration || transition-timing-function || transition-delay 1.transition-property​">
+<meta property="og:type" content="article">
+<meta property="og:title" content="动画">
+<meta property="og:url" content="http://yoursite.com/2020/07/17/%E5%9F%BA%E7%A1%80/CSS/%E5%8A%A8%E7%94%BB/index.html">
+<meta property="og:site_name" content="Myblog">
+<meta property="og:description" content="一、transition(过渡)​            transition作用在于指定变化所需的时间 ​            transition：transition-property || transition-duration || transition-timing-function || transition-delay 1.transition-property​">
+<meta property="article:published_time" content="2020-07-16T16:00:00.000Z">
+<meta property="article:modified_time" content="2020-07-17T07:43:55.139Z">
+<meta property="article:author" content="opopart">
+<meta property="article:tag" content="CSS">
+<meta name="twitter:card" content="summary">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2020/07/17/基础/CSS/动画/"/>
+
+
+
+
+
+  <title>动画 | Myblog</title>
+  
+
+
+
+
+
+
+
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Myblog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/07/17/%E5%9F%BA%E7%A1%80/CSS/%E5%8A%A8%E7%94%BB/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="opopart">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Myblog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">动画</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-07-17T00:00:00+08:00">
+                2020-07-17
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%9F%BA%E7%A1%80/" itemprop="url" rel="index">
+                    <span itemprop="name">基础</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%9F%BA%E7%A1%80/CSS/" itemprop="url" rel="index">
+                    <span itemprop="name">CSS</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="一、transition-过渡"><a href="#一、transition-过渡" class="headerlink" title="一、transition(过渡)"></a>一、transition(过渡)</h2><p>​            transition作用在于指定变化所需的时间</p>
+<p>​            transition：transition-property || transition-duration || transition-timing-function || transition-delay</p>
+<h3 id="1-transition-property"><a href="#1-transition-property" class="headerlink" title="1.transition-property"></a>1.transition-property</h3><p>​            指定变化的属性，如height、width、background-color、opacity</p>
+<p>​            值： none || all(默认值) || property(用户的属性列表，逗号隔开)</p>
+<h3 id="2-transition-duration"><a href="#2-transition-duration" class="headerlink" title="2.transition-duration"></a>2.transition-duration</h3><p>​            transition-duration： time    //单位为秒或者毫秒，默认为0</p>
+<h3 id="3-transition-timing-function"><a href="#3-transition-timing-function" class="headerlink" title="3.transition-timing-function"></a>3.transition-timing-function</h3><p>​            transition-timing-function: linear || ease || ease-in || ease-out || ease-in-out || cubic- bezier(n,n,n,n);</p>
+<p>​            liner：规定以相同速度开始至结束的过渡效果。</p>
+<p>​            ease：规定慢速开始，然后变快，然后慢速结束的过渡效果。</p>
+<p>​            ease-in：加速</p>
+<p>​            ease-out：减速</p>
+<p>​            ease-in-out：规定以慢速开始和结束的过渡效果。</p>
+<p>​            cubic-beizer(n,n,n,n)：贝塞尔曲线</p>
+<h3 id="4-transition-delay"><a href="#4-transition-delay" class="headerlink" title="4.transition-delay"></a>4.transition-delay</h3><p>​            指定延时时间</p>
+<h3 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h3><p>​        transition需要明确知道，开始状态和结束状态的具体值</p>
+<p>​        transition需要事件触发，所以没法在网页加载时自动发生</p>
+<p>​        transition是一次性的，不能重复发生，除非一再触发。</p>
+<p>​        transition只能定义开始状态和结束状态，不能定义中间状态，也就是说只有两个状态。</p>
+<h2 id="二、Ainmation"><a href="#二、Ainmation" class="headerlink" title="二、Ainmation"></a>二、Ainmation</h2><p>​        animation: animation-name || animation-duration || animation-timing-function || animation-delay || animation-        iteration-count || animation-direction</p>
+<h3 id="1-animation-name"><a href="#1-animation-name" class="headerlink" title="1.animation-name"></a>1.animation-name</h3><p>​            规定需要绑定到选择器的 keyframe 名称</p>
+<h3 id="2-animation-duration"><a href="#2-animation-duration" class="headerlink" title="2.animation-duration"></a>2.animation-duration</h3><p>​            规定完成动画所花费的时间，以秒或毫秒计</p>
+<h3 id="3-animation-timing-function"><a href="#3-animation-timing-function" class="headerlink" title="3.animation-timing-function"></a>3.animation-timing-function</h3><p>​            规定动画的速度曲线</p>
+<h3 id="4-animation-delay"><a href="#4-animation-delay" class="headerlink" title="4.animation-delay"></a>4.animation-delay</h3><p>​            规定在动画开始之前的延迟，默认值为0</p>
+<h3 id="5-animation-iteration-count"><a href="#5-animation-iteration-count" class="headerlink" title="5.animation-iteration-count"></a>5.animation-iteration-count</h3><p>​            规定动画应该播放的次数，默认值为1。</p>
+<p>​            infinite：无限次</p>
+<h3 id="6-animation-direction"><a href="#6-animation-direction" class="headerlink" title="6.animation-direction"></a>6.animation-direction</h3><p>​            规定是否应该轮流反向播放动画，默认值是正向</p>
+<p>​            normal：默认，正向</p>
+<p>​            alternate：正反交替，比如一个动画重复三次，则先正向，后反向，再正向</p>
+<p>​            reverse：反向</p>
+<p>​            alternate-reverse：先反向，再正反交替</p>
+<h3 id="7-animation-fill-mode"><a href="#7-animation-fill-mode" class="headerlink" title="7.animation-fill-mode"></a>7.animation-fill-mode</h3><p>​            animation-fill-mode: none || forwards || backwards || both</p>
+<p>​            none：默认，返回动画未开始的时候</p>
+<p>​            forwards：动画完成后，保持最后一帧</p>
+<p>​            backwards：在 <code>animation-delay</code>所指定的一段时间内，在动画显示之前，应用开始属性值（在第一个关键帧中定    义）</p>
+<p>​            both:根据<code>animation-direction</code>轮流应用forwards和backwards规则。</p>
+<h3 id="8-animation-play-state"><a href="#8-animation-play-state" class="headerlink" title="8.animation-play-state"></a>8.animation-play-state</h3><p>​            paused |  running</p>
+<h2 id="三、transform"><a href="#三、transform" class="headerlink" title="三、transform"></a>三、transform</h2><h3 id="translate"><a href="#translate" class="headerlink" title="translate"></a>translate</h3><p>​        transform: translate(50px,100px)   //向右移50px,向下移动100px</p>
+<h3 id="rotate"><a href="#rotate" class="headerlink" title="rotate"></a>rotate</h3><p>​        rotate(100deg)   //顺时针旋转100°， 负值则为逆时针旋转</p>
+<h3 id="scale"><a href="#scale" class="headerlink" title="scale"></a>scale</h3><p>​        transform: scale(2,4);  宽度转为原始尺寸的两倍，高度四倍</p>
+<h3 id="skew"><a href="#skew" class="headerlink" title="skew"></a>skew</h3><p>​        transform: skew(30deg,20deg);   //沿x轴正方向旋转30°，沿y轴正方向旋转20°</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/CSS/" rel="tag"><i class="fa fa-tag"></i> CSS</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2020/07/17/%E5%9F%BA%E7%A1%80/CSS/%E7%BB%93%E6%9E%84%E5%92%8C%E5%B1%82%E5%8F%A0/" rel="next" title="结构和层叠">
+                <i class="fa fa-chevron-left"></i> 结构和层叠
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2020/07/17/%E5%9F%BA%E7%A1%80/CSS/%E5%80%BC%E5%92%8C%E5%8D%95%E4%BD%8D/" rel="prev" title="值和单位">
+                值和单位 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">opopart</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives">
+              
+                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#一、transition-过渡"><span class="nav-number">1.</span> <span class="nav-text">一、transition(过渡)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-transition-property"><span class="nav-number">1.1.</span> <span class="nav-text">1.transition-property</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-transition-duration"><span class="nav-number">1.2.</span> <span class="nav-text">2.transition-duration</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-transition-timing-function"><span class="nav-number">1.3.</span> <span class="nav-text">3.transition-timing-function</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-transition-delay"><span class="nav-number">1.4.</span> <span class="nav-text">4.transition-delay</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#注意"><span class="nav-number">1.5.</span> <span class="nav-text">注意</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二、Ainmation"><span class="nav-number">2.</span> <span class="nav-text">二、Ainmation</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-animation-name"><span class="nav-number">2.1.</span> <span class="nav-text">1.animation-name</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-animation-duration"><span class="nav-number">2.2.</span> <span class="nav-text">2.animation-duration</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-animation-timing-function"><span class="nav-number">2.3.</span> <span class="nav-text">3.animation-timing-function</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-animation-delay"><span class="nav-number">2.4.</span> <span class="nav-text">4.animation-delay</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-animation-iteration-count"><span class="nav-number">2.5.</span> <span class="nav-text">5.animation-iteration-count</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-animation-direction"><span class="nav-number">2.6.</span> <span class="nav-text">6.animation-direction</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-animation-fill-mode"><span class="nav-number">2.7.</span> <span class="nav-text">7.animation-fill-mode</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-animation-play-state"><span class="nav-number">2.8.</span> <span class="nav-text">8.animation-play-state</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三、transform"><span class="nav-number">3.</span> <span class="nav-text">三、transform</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#translate"><span class="nav-number">3.1.</span> <span class="nav-text">translate</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#rotate"><span class="nav-number">3.2.</span> <span class="nav-text">rotate</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#scale"><span class="nav-number">3.3.</span> <span class="nav-text">scale</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#skew"><span class="nav-number">3.4.</span> <span class="nav-text">skew</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">opopart</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

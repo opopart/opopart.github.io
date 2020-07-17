@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+
+
+
+
+<html class="theme-next gemini" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="HTML," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="一、语义标签   标签 描述    hrader&#x2F;header 定义了文档的头部区域   footer&#x2F;footer 定义了文档的尾部区域   nav&#x2F;nav 定义文档的导航   section&#x2F;section 定义文档中的节（section、区段）   article&#x2F;article 定义页面独立的内容区域   aside&#x2F;aside 定义页面的侧边栏内容   detailes&#x2F;detailes">
+<meta property="og:type" content="article">
+<meta property="og:title" content="HTML十大特性">
+<meta property="og:url" content="http://yoursite.com/2020/07/17/%E5%9F%BA%E7%A1%80/HTML/H5%E5%8D%81%E5%A4%A7%E6%96%B0%E7%89%B9%E6%80%A7/index.html">
+<meta property="og:site_name" content="Myblog">
+<meta property="og:description" content="一、语义标签   标签 描述    hrader&#x2F;header 定义了文档的头部区域   footer&#x2F;footer 定义了文档的尾部区域   nav&#x2F;nav 定义文档的导航   section&#x2F;section 定义文档中的节（section、区段）   article&#x2F;article 定义页面独立的内容区域   aside&#x2F;aside 定义页面的侧边栏内容   detailes&#x2F;detailes">
+<meta property="article:published_time" content="2020-07-17T03:13:47.000Z">
+<meta property="article:modified_time" content="2020-07-17T07:28:45.919Z">
+<meta property="article:author" content="opopart">
+<meta property="article:tag" content="HTML">
+<meta name="twitter:card" content="summary">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2020/07/17/基础/HTML/H5十大新特性/"/>
+
+
+
+
+
+  <title>HTML十大特性 | Myblog</title>
+  
+
+
+
+
+
+
+
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Myblog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/07/17/%E5%9F%BA%E7%A1%80/HTML/H5%E5%8D%81%E5%A4%A7%E6%96%B0%E7%89%B9%E6%80%A7/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="opopart">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Myblog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">HTML十大特性</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-07-17T11:13:47+08:00">
+                2020-07-17
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%9F%BA%E7%A1%80/" itemprop="url" rel="index">
+                    <span itemprop="name">基础</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%9F%BA%E7%A1%80/HTML/" itemprop="url" rel="index">
+                    <span itemprop="name">HTML</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="一、语义标签"><a href="#一、语义标签" class="headerlink" title="一、语义标签"></a>一、语义标签</h2><table>
+<thead>
+<tr>
+<th align="center">标签</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">hrader/header</td>
+<td>定义了文档的头部区域</td>
+</tr>
+<tr>
+<td align="center">footer/footer</td>
+<td>定义了文档的尾部区域</td>
+</tr>
+<tr>
+<td align="center">nav/nav</td>
+<td>定义文档的导航</td>
+</tr>
+<tr>
+<td align="center">section/section</td>
+<td>定义文档中的节（section、区段）</td>
+</tr>
+<tr>
+<td align="center">article/article</td>
+<td>定义页面独立的内容区域</td>
+</tr>
+<tr>
+<td align="center">aside/aside</td>
+<td>定义页面的侧边栏内容</td>
+</tr>
+<tr>
+<td align="center">detailes/detailes</td>
+<td>用于描述文档或文档某个部分的细节</td>
+</tr>
+<tr>
+<td align="center">summary/summary</td>
+<td>标签包含 details 元素的标题</td>
+</tr>
+<tr>
+<td align="center">dialog/dialog</td>
+<td>定义对话框，比如提示框</td>
+</tr>
+</tbody></table>
+<h2 id="二、增强表单"><a href="#二、增强表单" class="headerlink" title="二、增强表单"></a>二、增强表单</h2><h4 id="1-新增input输入类型"><a href="#1-新增input输入类型" class="headerlink" title="1.新增input输入类型"></a>1.新增input输入类型</h4><table>
+<thead>
+<tr>
+<th align="center">输入类型</th>
+<th align="center">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">color</td>
+<td align="center">主要用于选取颜色</td>
+</tr>
+<tr>
+<td align="center">date</td>
+<td align="center">从一个日期选择器选择一个日期</td>
+</tr>
+<tr>
+<td align="center">datetime</td>
+<td align="center">选择一个日期（UTC 时间）</td>
+</tr>
+<tr>
+<td align="center">datetime-local</td>
+<td align="center">选择一个日期和时间 (无时区)</td>
+</tr>
+<tr>
+<td align="center">email</td>
+<td align="center">包含 e-mail 地址的输入域</td>
+</tr>
+<tr>
+<td align="center">month</td>
+<td align="center">选择一个月份</td>
+</tr>
+<tr>
+<td align="center">number</td>
+<td align="center">数值的输入域</td>
+</tr>
+<tr>
+<td align="center">range</td>
+<td align="center">一定范围内数字值的输入域</td>
+</tr>
+<tr>
+<td align="center">search</td>
+<td align="center">用于搜索域</td>
+</tr>
+<tr>
+<td align="center">tel</td>
+<td align="center">定义输入电话号码字段</td>
+</tr>
+<tr>
+<td align="center">time</td>
+<td align="center">选择一个时间</td>
+</tr>
+<tr>
+<td align="center">url</td>
+<td align="center">URL 地址的输入域</td>
+</tr>
+<tr>
+<td align="center">week</td>
+<td align="center">选择周和年</td>
+</tr>
+</tbody></table>
+<h4 id="2-html5新增表单元素"><a href="#2-html5新增表单元素" class="headerlink" title="2.html5新增表单元素"></a>2.html5新增表单元素</h4><table>
+<thead>
+<tr>
+<th>表单元素</th>
+<th align="center">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><datalist></td>
+<td align="center">元素规定输入域的选项列表<br/>使用 <input> 元素的 list 属性与 <datalist> 元素的 id 绑定</td>
+</tr>
+<tr>
+<td><keygen></td>
+<td align="center">提供一种验证用户的可靠方法<br/>标签规定用于表单的密钥对生成器字段。</td>
+</tr>
+<tr>
+<td><output></td>
+<td align="center">用于不同类型的输出<br/>比如计算或脚本输出</td>
+</tr>
+</tbody></table>
+<h4 id="3-新增表单属性"><a href="#3-新增表单属性" class="headerlink" title="3.新增表单属性"></a>3.新增表单属性</h4><p>placehoder ：输入框提示</p>
+<p>required：输入域不能为空</p>
+<p>pattern：正则表达式验证<code>&lt;input&gt;</code>的值</p>
+<p>min和max：元素最大最小值</p>
+<p>step：合法的数值间隔</p>
+<p>heigh和width：用于 image 类型的 <code>&lt;input&gt;</code> 标签的图像高度和宽度。</p>
+<p>autofocus:自动获得焦点</p>
+<p>multiple：规定<code>&lt;input&gt;</code>可选多个值</p>
+<h2 id="三、视频和音频"><a href="#三、视频和音频" class="headerlink" title="三、视频和音频"></a>三、视频和音频</h2><h4 id="1-音频"><a href="#1-音频" class="headerlink" title="1.音频"></a>1.音频</h4><p>​        使用<code>&lt;audio&gt;</code></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">audio</span> <span class="attr">controls</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">source</span> <span class="attr">src</span>=<span class="string">"horse.ogg"</span> <span class="attr">type</span>=<span class="string">"audio/ogg"</span>&gt;</span>     //source 会选择第一个支持的格式</span><br><span class="line">  <span class="tag">&lt;<span class="name">source</span> <span class="attr">src</span>=<span class="string">"horse.mp3"</span> <span class="attr">type</span>=<span class="string">"audio/mpeg"</span>&gt;</span></span><br><span class="line">您的浏览器不支持 audio 元素。</span><br><span class="line"><span class="tag">&lt;/<span class="name">audio</span>&gt;</span></span><br><span class="line">//目前支持，MP4，Wav，Ogg</span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="2-视频"><a href="#2-视频" class="headerlink" title="2.视频"></a>2.视频</h4><p>​        使用<code>&lt;video&gt;</code></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">video</span> <span class="attr">width</span>=<span class="string">"320"</span> <span class="attr">height</span>=<span class="string">"240"</span> <span class="attr">controls</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">source</span> <span class="attr">src</span>=<span class="string">"movie.mp4"</span> <span class="attr">type</span>=<span class="string">"video/mp4"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">source</span> <span class="attr">src</span>=<span class="string">"movie.ogg"</span> <span class="attr">type</span>=<span class="string">"video/ogg"</span>&gt;</span></span><br><span class="line">您的浏览器不支持Video标签。</span><br><span class="line"><span class="tag">&lt;/<span class="name">video</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>有play() 和 pause() 方法</p>
+<h2 id="四、canvas绘图"><a href="#四、canvas绘图" class="headerlink" title="四、canvas绘图"></a>四、canvas绘图</h2><p>​        html5 的 canvas 元素使用JavaScript在网页上绘制图像</p>
+<h3 id="1-创建画布"><a href="#1-创建画布" class="headerlink" title="1.创建画布"></a>1.创建画布</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">canvas</span> <span class="attr">id</span>=<span class="string">"myCanvas"</span> <span class="attr">width</span>=<span class="string">"200"</span> <span class="attr">height</span>=<span class="string">"100"</span>&gt;</span><span class="tag">&lt;/<span class="name">canvas</span>&gt;</span>    //创建一个矩形区域的画布</span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span><span class="actionscript">							  <span class="comment">//通过JavaScript进行绘制</span></span></span><br><span class="line"><span class="javascript"><span class="keyword">var</span> c=<span class="built_in">document</span>.getElementById(<span class="string">"myCanvas"</span>);</span></span><br><span class="line"><span class="actionscript"><span class="keyword">var</span> cxt=c.getContext(<span class="string">"2d"</span>);	 <span class="comment">//getContext("2d")对象是内建的HTML5对象，拥有很多绘制路径、矩形、圆形、字符以及添加图像的方法</span></span></span><br><span class="line"><span class="actionscript">cxt.fillStyle=<span class="string">"#FF0000"</span>;	<span class="comment">// 要填充的颜色</span></span></span><br><span class="line"><span class="actionscript">cxt.fillRect(<span class="number">0</span>,<span class="number">0</span>,<span class="number">150</span>,<span class="number">75</span>);	<span class="comment">//绘制矩形</span></span></span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="2-绘制路径"><a href="#2-绘制路径" class="headerlink" title="2.绘制路径"></a>2.绘制路径</h3><p>主要是两个方法：moveTo(x,y)  定义线条开始坐标，不画，   lineTo(x,y)定义线条结束坐标， stroke() 开始绘制</p>
+<p>​                            strokeStyle 定义线条颜色</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">定义开始坐标(0,0),和结束坐标(200,100),使用stroke开始绘制一条颜色为#FFF000的线条</span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="javascript">    <span class="keyword">var</span> c=<span class="built_in">document</span>.getElementById(<span class="string">"myCanvas"</span>);</span></span><br><span class="line"><span class="actionscript">    <span class="keyword">var</span> ctx=c.getContext(<span class="string">"2d"</span>);</span></span><br><span class="line"><span class="actionscript">    ctx.strokeStyle=<span class="string">"#FFF000"</span></span></span><br><span class="line">    ctx.moveTo(0,0);</span><br><span class="line">    ctx.lineTo(200,100);</span><br><span class="line">    ctx.stroke();</span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="3-绘制文本"><a href="#3-绘制文本" class="headerlink" title="3.绘制文本"></a>3.绘制文本</h3><p>主要方法： font-定义字体(字体大小，字体family)        fillText(text, x, y) - 绘制实心文本   strokeText(text,x,y) - 绘制空心文本</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> c=<span class="built_in">document</span>.getElementById(<span class="string">"myCanvas"</span>);</span><br><span class="line"><span class="keyword">var</span> ctx=c.getContext(<span class="string">"2d"</span>);</span><br><span class="line">ctx.font=<span class="string">"30px Arial"</span>;</span><br><span class="line">ctx.fillText(<span class="string">"Hello World"</span>,<span class="number">10</span>,<span class="number">50</span>);</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="4-渐变"><a href="#4-渐变" class="headerlink" title="4.渐变"></a>4.渐变</h3><p>主要通过两种方式：　createLinearGradient(<em>x,y,x1,y1</em>) - 创建线条渐变</p>
+<p>​                                    createRadialGradient(<em>x,y,r,x1,y1,r1</em>) - 创建一个径向/圆渐变</p>
+<p>​                addColorStop()方法指定颜色停止，参数使用坐标来描述，可以是0至1</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">var</span> c=<span class="built_in">document</span>.getElementById(<span class="string">"myCanvas"</span>);</span><br><span class="line"><span class="keyword">var</span> cxt=c.getContext(<span class="string">"2d"</span>);</span><br><span class="line"><span class="keyword">var</span> grd=cxt.createLinearGradient(<span class="number">0</span>,<span class="number">0</span>,<span class="number">175</span>,<span class="number">50</span>);</span><br><span class="line">grd.addColorStop(<span class="number">0</span>,<span class="string">"#FF0000"</span>);</span><br><span class="line">grd.addColorStop(<span class="number">1</span>,<span class="string">"#00FF00"</span>);</span><br><span class="line">cxt.fillStyle=grd;   <span class="comment">//设置填充颜色</span></span><br><span class="line">cxt.fillRect(<span class="number">0</span>,<span class="number">0</span>,<span class="number">175</span>,<span class="number">50</span>);  <span class="comment">//填充矩形</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="五、SVG"><a href="#五、SVG" class="headerlink" title="五、SVG"></a>五、SVG</h2><p>​        SVG 是一种使用 XML 描述 2D 图形的语言。</p>
+<p>​        SVG 指可伸缩矢量图形 (Scalable Vector Graphics)</p>
+<h2 id="六、地理定位"><a href="#六、地理定位" class="headerlink" title="六、地理定位"></a>六、地理定位</h2><p>​        　HTML5 Geolocation（地理定位）用于定位用户的位置。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">window</span>.navigator.geolocation &#123;</span><br><span class="line">    getCurrentPosition:  fn  用于获取当前的位置数据</span><br><span class="line">    watchPosition: fn  监视用户位置的改变</span><br><span class="line">    clearWatch: fn  清除定位监视</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>​            获取用户定位信息</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">navigator.geolocation.getCurrentPosition(</span><br><span class="line">    <span class="function"><span class="keyword">function</span>(<span class="params">pos</span>)</span>&#123;</span><br><span class="line">　　　　<span class="built_in">console</span>.log(<span class="string">'用户定位数据获取成功'</span>)</span><br><span class="line">　　　　<span class="comment">//console.log(arguments);</span></span><br><span class="line">　　　　<span class="built_in">console</span>.log(<span class="string">'定位时间：'</span>,pos.timestamp)</span><br><span class="line">　　　　<span class="built_in">console</span>.log(<span class="string">'经度：'</span>,pos.coords.longitude)</span><br><span class="line">　　　　<span class="built_in">console</span>.log(<span class="string">'纬度：'</span>,pos.coords.latitude)</span><br><span class="line">　　　　<span class="built_in">console</span>.log(<span class="string">'海拔：'</span>,pos.coords.altitude)</span><br><span class="line">　　　　<span class="built_in">console</span>.log(<span class="string">'速度：'</span>,pos.coords.speed)</span><br><span class="line"></span><br><span class="line">&#125;,    <span class="comment">//定位成功的回调</span></span><br><span class="line"><span class="function"><span class="keyword">function</span>(<span class="params">err</span>)</span>&#123; </span><br><span class="line">　　　　<span class="built_in">console</span>.log(<span class="string">'用户定位数据获取失败'</span>)</span><br><span class="line">　　　　<span class="comment">//console.log(arguments);</span></span><br><span class="line"></span><br><span class="line">&#125;        <span class="comment">//定位失败的回调</span></span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="七、拖放API"><a href="#七、拖放API" class="headerlink" title="七、拖放API"></a>七、拖放API</h2><h3 id="1-拖放的源对象-可发生移动的"><a href="#1-拖放的源对象-可发生移动的" class="headerlink" title="1.拖放的源对象(可发生移动的)"></a>1.拖放的源对象(可发生移动的)</h3><p>​        可以触发四个事件：dragstart：拖动开始，drag：拖动中，dragend：拖动结束</p>
+<p>​        整个过程的组成：<code>dragstart*1 + drag*n + dragend*1</code></p>
+<h3 id="2-拖放的目标对象-不会发生移动"><a href="#2-拖放的目标对象-不会发生移动" class="headerlink" title="2.拖放的目标对象(不会发生移动)"></a>2.拖放的目标对象(不会发生移动)</h3><p>​        可以触发四个事件：dragenter：拖动着进入，dragover：拖动着悬停，dragleave：拖动着离开，drop：释放</p>
+<p>​        整个拖动过程的组成1： <code>dragenter*1 + dragover*n + dragleave*1</code></p>
+<p>​        整个拖动过程的组成2： <code>dragenter*1 + dragover*n + drop*1</code></p>
+<h3 id="3-dataTransfer-用于数据传递的拖拉机对象："><a href="#3-dataTransfer-用于数据传递的拖拉机对象：" class="headerlink" title="3.dataTransfer:用于数据传递的拖拉机对象："></a>3.dataTransfer:用于数据传递的拖拉机对象：</h3><p>​         在拖动源对象事件中使用e.dataTransfer属性保存数据：</p>
+<p>​            e.dataTransfer.setData( k,  v )</p>
+<pre><code>在拖动目标对象事件中使用e.dataTransfer属性读取数据：</code></pre><p>​        var value = e.dataTransfer.getData( k )</p>
+<h3 id="4-示例"><a href="#4-示例" class="headerlink" title="4.示例"></a>4.示例</h3><p>​        小球来回移动</p>
+<p>​        注意点： 1.要想可以拖放，需设置draggable=”true”</p>
+<p>​                        2.drop的默认行为是链接形式打开，所以需要调用preventDefault()来阻止默认行为</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span> </span><br><span class="line"><span class="css"><span class="selector-id">#div1</span>, <span class="selector-id">#div2</span> &#123;</span></span><br><span class="line">    float: left;</span><br><span class="line">    width: 300px;</span><br><span class="line">    height: 300px;</span><br><span class="line"><span class="css">    <span class="selector-tag">border</span>: 2<span class="selector-tag">px</span> <span class="selector-tag">solid</span> <span class="selector-id">#FFF000</span>;</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="css"><span class="selector-id">#div3</span> &#123;</span></span><br><span class="line">    width: 50px;</span><br><span class="line">    height: 50px;</span><br><span class="line">    margin: 10px;</span><br><span class="line">    border-radius: 50%;</span><br><span class="line">    background-color: red;</span><br><span class="line">&#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"div1"</span> <span class="attr">ondrop</span>=<span class="string">"drop(event)"</span> <span class="attr">ondragover</span>=<span class="string">"allowDrop(event)"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"div3"</span> <span class="attr">draggable</span>=<span class="string">"true"</span> <span class="attr">ondragstart</span>=<span class="string">"drag(event)"</span> &gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span>   </span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"div2"</span> <span class="attr">ondrop</span>=<span class="string">"drop(event)"</span> <span class="attr">ondragover</span>=<span class="string">"allowDrop(event)"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="actionscript"><span class="function"><span class="keyword">function</span> <span class="title">allowDrop</span><span class="params">(e)</span> </span>&#123;</span></span><br><span class="line">    e.preventDefault();</span><br><span class="line">&#125;</span><br><span class="line"><span class="actionscript"><span class="function"><span class="keyword">function</span> <span class="title">drag</span><span class="params">(e)</span> </span>&#123;</span></span><br><span class="line"><span class="actionscript">    e.dataTransfer.setData(<span class="string">'aaa'</span>,e.target.id)</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="actionscript"><span class="function"><span class="keyword">function</span> <span class="title">drop</span><span class="params">(e)</span> </span>&#123;</span></span><br><span class="line">    e.preventDefault();</span><br><span class="line"><span class="actionscript">    <span class="keyword">var</span> data = e.dataTransfer.getData(<span class="string">'aaa'</span>);</span></span><br><span class="line"><span class="javascript">    e.target.appendChild(<span class="built_in">document</span>.getElementById(data))</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="八、Web-Worker"><a href="#八、Web-Worker" class="headerlink" title="八、Web Worker"></a>八、Web Worker</h2><p>​            web worker 是运行在后台的JavaScript，独立于其他脚本，不会影响页面的性能。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//1.检测浏览器是否支持web worker</span></span><br><span class="line"><span class="keyword">if</span>(<span class="keyword">typeof</span>(Worker)!==<span class="string">"undefined"</span>)</span><br><span class="line">  &#123;</span><br><span class="line">  <span class="comment">// Yes! Web worker support!</span></span><br><span class="line">  <span class="comment">// Some code.....</span></span><br><span class="line">  &#125;</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">  &#123;</span><br><span class="line">  <span class="comment">// Sorry! No Web Worker support..</span></span><br><span class="line">  &#125;</span><br><span class="line"><span class="comment">//2.创建 web worker 文件</span></span><br><span class="line"><span class="keyword">if</span>(<span class="keyword">typeof</span>(w)==<span class="string">"undefined"</span>)</span><br><span class="line">  &#123;</span><br><span class="line">  w=<span class="keyword">new</span> Worker(<span class="string">"demo_workers.js"</span>);</span><br><span class="line">  &#125;</span><br><span class="line"><span class="comment">//3.向 web worker 对象 添加"onmessage"事件监听器</span></span><br><span class="line">w.onmessage=<span class="function"><span class="keyword">function</span>(<span class="params">event</span>)</span>&#123;</span><br><span class="line"><span class="built_in">document</span>.getElementById(<span class="string">"result"</span>).innerHTML=event.data;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="comment">//4.终止 web worker </span></span><br><span class="line">w.terminate();</span><br></pre></td></tr></table></figure>
+
+<p>​        </p>
+<h2 id="九、Web-Storage"><a href="#九、Web-Storage" class="headerlink" title="九、Web Storage"></a>九、Web Storage</h2><p>​        localStorage：没有时间限制的数据存储</p>
+<p>​        sessionStorage：针对一个session的数据存储，当用户关闭浏览器后，数据会被删除</p>
+<p>​        相关API：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">保存数据：localStorage.setItem(key,value);</span><br><span class="line">读取数据：localStorage.getItem(key);</span><br><span class="line">删除单个数据：localStorage.removeItem(key);</span><br><span class="line">删除所有数据：localStorage.clear();</span><br><span class="line">得到某个索引的key：localStorage.key(index);</span><br><span class="line"><span class="comment">//sessionStorage一样</span></span><br></pre></td></tr></table></figure>
+
+
+<h2 id="十、WebSocket"><a href="#十、WebSocket" class="headerlink" title="十、WebSocket"></a>十、WebSocket</h2><p>​    WebSocket是HTML5提供的一种在单个TCP连接上进行的全双工通讯的协议。在WebSocket API中， 浏览器和服务器只需要做一个握手的动作，然后，服务器和浏览器之间就形成了一条快速通道。浏览器可以使用send()方法向服务器发送数据，并通过onmessage事件来接收服务器发来的数据</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> ws = <span class="keyword">new</span> WebSocket(<span class="string">"ws://localhost:9998/echo"</span>);     </span><br><span class="line">	ws.onopen = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function">     </span>&#123;</span><br><span class="line">        <span class="comment">// Web Socket 已连接上，使用 send() 方法发送数据</span></span><br><span class="line">        ws.send(<span class="string">"发送数据"</span>);</span><br><span class="line">        alert(<span class="string">"数据发送中..."</span>);</span><br><span class="line">     &#125;;</span><br><span class="line">      </span><br><span class="line">     ws.onmessage = <span class="function"><span class="keyword">function</span> (<span class="params">evt</span>) </span></span><br><span class="line"><span class="function">     </span>&#123; </span><br><span class="line">        <span class="keyword">var</span> received_msg = evt.data;</span><br><span class="line">        alert(<span class="string">"数据已接收..."</span>);</span><br><span class="line">     &#125;;</span><br><span class="line">      </span><br><span class="line">     ws.onclose = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function">     </span>&#123; </span><br><span class="line">        <span class="comment">// 关闭 websocket</span></span><br><span class="line">        alert(<span class="string">"连接已关闭..."</span>); </span><br><span class="line">     &#125;;</span><br></pre></td></tr></table></figure>
+
+
+
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/HTML/" rel="tag"><i class="fa fa-tag"></i> HTML</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2020/07/17/%E5%9F%BA%E7%A1%80/CSS/%E5%80%BC%E5%92%8C%E5%8D%95%E4%BD%8D/" rel="next" title="值和单位">
+                <i class="fa fa-chevron-left"></i> 值和单位
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">opopart</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives">
+              
+                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#一、语义标签"><span class="nav-number">1.</span> <span class="nav-text">一、语义标签</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二、增强表单"><span class="nav-number">2.</span> <span class="nav-text">二、增强表单</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-新增input输入类型"><span class="nav-number">2.0.1.</span> <span class="nav-text">1.新增input输入类型</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-html5新增表单元素"><span class="nav-number">2.0.2.</span> <span class="nav-text">2.html5新增表单元素</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-新增表单属性"><span class="nav-number">2.0.3.</span> <span class="nav-text">3.新增表单属性</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三、视频和音频"><span class="nav-number">3.</span> <span class="nav-text">三、视频和音频</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-音频"><span class="nav-number">3.0.1.</span> <span class="nav-text">1.音频</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-视频"><span class="nav-number">3.0.2.</span> <span class="nav-text">2.视频</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#四、canvas绘图"><span class="nav-number">4.</span> <span class="nav-text">四、canvas绘图</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-创建画布"><span class="nav-number">4.1.</span> <span class="nav-text">1.创建画布</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-绘制路径"><span class="nav-number">4.2.</span> <span class="nav-text">2.绘制路径</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-绘制文本"><span class="nav-number">4.3.</span> <span class="nav-text">3.绘制文本</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-渐变"><span class="nav-number">4.4.</span> <span class="nav-text">4.渐变</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#五、SVG"><span class="nav-number">5.</span> <span class="nav-text">五、SVG</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#六、地理定位"><span class="nav-number">6.</span> <span class="nav-text">六、地理定位</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#七、拖放API"><span class="nav-number">7.</span> <span class="nav-text">七、拖放API</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-拖放的源对象-可发生移动的"><span class="nav-number">7.1.</span> <span class="nav-text">1.拖放的源对象(可发生移动的)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-拖放的目标对象-不会发生移动"><span class="nav-number">7.2.</span> <span class="nav-text">2.拖放的目标对象(不会发生移动)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-dataTransfer-用于数据传递的拖拉机对象："><span class="nav-number">7.3.</span> <span class="nav-text">3.dataTransfer:用于数据传递的拖拉机对象：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-示例"><span class="nav-number">7.4.</span> <span class="nav-text">4.示例</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#八、Web-Worker"><span class="nav-number">8.</span> <span class="nav-text">八、Web Worker</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#九、Web-Storage"><span class="nav-number">9.</span> <span class="nav-text">九、Web Storage</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#十、WebSocket"><span class="nav-number">10.</span> <span class="nav-text">十、WebSocket</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">opopart</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

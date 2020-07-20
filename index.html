@@ -954,6 +954,179 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/07/17/%E5%9F%BA%E7%A1%80/CSS/%E5%AD%97%E4%BD%93/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="opopart">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Myblog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2020/07/17/%E5%9F%BA%E7%A1%80/CSS/%E5%AD%97%E4%BD%93/" itemprop="url">字体</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-07-17T00:00:00+08:00">
+                2020-07-17
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%9F%BA%E7%A1%80/" itemprop="url" rel="index">
+                    <span itemprop="name">基础</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%9F%BA%E7%A1%80/CSS/" itemprop="url" rel="index">
+                    <span itemprop="name">CSS</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>font-family：字体系列</p>
+<p>font-weight：字体加粗，100~900， normal = 400， bold = 700</p>
+<p>​                     字体更粗(bolder)：(100<del>300) -&gt; 400, (400</del>600) -&gt; 700, 700 -&gt; 800, 800 -&gt; 900</p>
+<p>​                     字体更细(lighter):  (700<del>900) -&gt; 400, (400</del>600) -&gt; 100, 300 -&gt; 200, 200 -&gt; 100</p>
+<p>font-size：值xx-small、x-small、small、medium、large、x-large、xx-large、smaller、larger</p>
+<p>font-style：italic(斜体) | oblique(倾斜) | normal | inherit</p>
+<p>font-variant: 字体变形，值：small-caps(小型大写字母) | normal</p>
+<p>text-align：left | center | right | justify(两端对齐) | inherit, 只能用于块级元素</p>
+<p>line-height：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">line-height值从父元素继承时，计算是在父元素计算</span><br><span class="line">body &#123; font-size: 10px&#125;</span><br><span class="line">div &#123; line-height: 1em &#125;</span><br><span class="line">p &#123; font-size: 18px&#125;</span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span></span><br><span class="line">        此行高为1opx</span><br><span class="line">    <span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line">如果父元素行高设置为数字，则子元素根据数字计算</span><br><span class="line">div &#123; line-height：1.5 &#125;</span><br><span class="line">p &#123; font-size：18px&#125;</span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span></span><br><span class="line">        此行高为18x1.5px</span><br><span class="line">    <span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>vertical-align：baseline | sub | super | middle | bottom | top | 百分数(根据行高) | 数值(正数，相对基线上升，反之，下降)</p>
+<p>word-spacing：字间隔</p>
+<p>letter-spacing： 字母间隔</p>
+<p>text-transform：文本转换 uppercase | lowercase | capitalize(每个单词的首字母) | none</p>
+<p>text-decoration：none | underline(下划线) | overline(上划线) | line-through(贯穿线) ， 不能继承</p>
+<p>text-shadow： <color>  <length> <length> <length>  : 第一个len向右偏移，第二个len向下偏移，第三个模糊半径</p>
+<p>white-space： </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">值			空白符			换行符			自动换行</span><br><span class="line">pre-line	  合并		   保留		    允许</span><br><span class="line">normal		  合并		   忽略 		    允许</span><br><span class="line">nowrap		  合并		   忽略		    不允许</span><br><span class="line">pre 		  保留		   保留			不允许</span><br><span class="line">pre-wrap	   保留		    保留			允许</span><br></pre></td></tr></table></figure>
+
+<p>direction：ltr(左到右) | rtl(右到左)</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/07/17/%E5%9F%BA%E7%A1%80/CSS/%E7%BB%93%E6%9E%84%E5%92%8C%E5%B1%82%E5%8F%A0/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1322,179 +1495,6 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/07/17/%E5%9F%BA%E7%A1%80/CSS/%E5%AD%97%E4%BD%93/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="opopart">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Myblog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2020/07/17/%E5%9F%BA%E7%A1%80/CSS/%E5%AD%97%E4%BD%93/" itemprop="url">字体</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-07-17T00:00:00+08:00">
-                2020-07-17
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%9F%BA%E7%A1%80/" itemprop="url" rel="index">
-                    <span itemprop="name">基础</span>
-                  </a>
-                </span>
-
-                
-                
-                  ， 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%9F%BA%E7%A1%80/CSS/" itemprop="url" rel="index">
-                    <span itemprop="name">CSS</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>font-family：字体系列</p>
-<p>font-weight：字体加粗，100~900， normal = 400， bold = 700</p>
-<p>​                     字体更粗(bolder)：(100<del>300) -&gt; 400, (400</del>600) -&gt; 700, 700 -&gt; 800, 800 -&gt; 900</p>
-<p>​                     字体更细(lighter):  (700<del>900) -&gt; 400, (400</del>600) -&gt; 100, 300 -&gt; 200, 200 -&gt; 100</p>
-<p>font-size：值xx-small、x-small、small、medium、large、x-large、xx-large、smaller、larger</p>
-<p>font-style：italic(斜体) | oblique(倾斜) | normal | inherit</p>
-<p>font-variant: 字体变形，值：small-caps(小型大写字母) | normal</p>
-<p>text-align：left | center | right | justify(两端对齐) | inherit, 只能用于块级元素</p>
-<p>line-height：</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">line-height值从父元素继承时，计算是在父元素计算</span><br><span class="line">body &#123; font-size: 10px&#125;</span><br><span class="line">div &#123; line-height: 1em &#125;</span><br><span class="line">p &#123; font-size: 18px&#125;</span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span></span><br><span class="line">        此行高为1opx</span><br><span class="line">    <span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line">如果父元素行高设置为数字，则子元素根据数字计算</span><br><span class="line">div &#123; line-height：1.5 &#125;</span><br><span class="line">p &#123; font-size：18px&#125;</span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span></span><br><span class="line">        此行高为18x1.5px</span><br><span class="line">    <span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>vertical-align：baseline | sub | super | middle | bottom | top | 百分数(根据行高) | 数值(正数，相对基线上升，反之，下降)</p>
-<p>word-spacing：字间隔</p>
-<p>letter-spacing： 字母间隔</p>
-<p>text-transform：文本转换 uppercase | lowercase | capitalize(每个单词的首字母) | none</p>
-<p>text-decoration：none | underline(下划线) | overline(上划线) | line-through(贯穿线) ， 不能继承</p>
-<p>text-shadow： <color>  <length> <length> <length>  : 第一个len向右偏移，第二个len向下偏移，第三个模糊半径</p>
-<p>white-space： </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">值			空白符			换行符			自动换行</span><br><span class="line">pre-line	  合并		   保留		    允许</span><br><span class="line">normal		  合并		   忽略 		    允许</span><br><span class="line">nowrap		  合并		   忽略		    不允许</span><br><span class="line">pre 		  保留		   保留			不允许</span><br><span class="line">pre-wrap	   保留		    保留			允许</span><br></pre></td></tr></table></figure>
-
-<p>direction：ltr(左到右) | rtl(右到左)</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/07/16/%E5%9F%BA%E7%A1%80/Javascript/%E5%AF%B9%E8%B1%A1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1798,9 +1798,568 @@
 
 
     
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/07/16/%E5%9F%BA%E7%A1%80/Javascript/DOM/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="opopart">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Myblog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2020/07/16/%E5%9F%BA%E7%A1%80/Javascript/DOM/" itemprop="url">DOM对象</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-07-16T00:00:00+08:00">
+                2020-07-16
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%9F%BA%E7%A1%80/" itemprop="url" rel="index">
+                    <span itemprop="name">基础</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%9F%BA%E7%A1%80/JavaScript/" itemprop="url" rel="index">
+                    <span itemprop="name">JavaScript</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="一、查找"><a href="#一、查找" class="headerlink" title="一、查找"></a>一、查找</h2><h3 id="document"><a href="#document" class="headerlink" title="document"></a>document</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">document</span>.getElementById(<span class="string">'id'</span>)</span><br><span class="line"><span class="built_in">document</span>.getElementByClassName(<span class="string">'classname'</span>) </span><br><span class="line"><span class="built_in">document</span>.getElementsByTagName(<span class="string">'tag'</span>)</span><br><span class="line"><span class="built_in">document</span>.querySelector(<span class="string">'#foo &gt; div.bar'</span>)  <span class="comment">//方法返回文档中与指定选择器或选择器组匹配的第一个 html元素Element。</span></span><br><span class="line"><span class="built_in">document</span>.querySelectorAll(<span class="string">'.bar'</span>)</span><br></pre></td></tr></table></figure>
+
+<p>节点指针</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">父节点.firstChild	<span class="comment">//获取元素的第一个子节点，包括文本节点</span></span><br><span class="line">父节点.firstElementChild  <span class="comment">//获取元素的第一个子元素节点</span></span><br><span class="line">父节点.lastChild		  <span class="comment">//获取元素的最后一个子节点</span></span><br><span class="line">父节点.lastElementChild  <span class="comment">//获取元素的最后一个子元素节点</span></span><br><span class="line">父节点.childNodes	<span class="comment">//获取元素的子节点列表</span></span><br><span class="line">当前节点.previousSibling	   <span class="comment">//获取已知节点的前一个节点</span></span><br><span class="line">当前节点.nextSibling		  <span class="comment">//获取已知节点的后一个节点  </span></span><br><span class="line">子节点.parentNode   <span class="comment">//获取已知节点的父节点</span></span><br><span class="line">文本节点.nodeValue   <span class="comment">//获取文本内容</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="二、节点操作"><a href="#二、节点操作" class="headerlink" title="二、节点操作"></a>二、节点操作</h2><h3 id="1-创建节点"><a href="#1-创建节点" class="headerlink" title="1.创建节点"></a>1.创建节点</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">document</span>.creatElement(元素标签)   <span class="comment">//创建元素节点</span></span><br><span class="line"><span class="built_in">document</span>.createAttribute(元素属性)  <span class="comment">//创建属性节点</span></span><br><span class="line"><span class="built_in">document</span>.createTextNode(文本内容) <span class="comment">//创建文本节点</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="2-插入节点"><a href="#2-插入节点" class="headerlink" title="2.插入节点"></a>2.插入节点</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">父节点.appendChild(新节点)</span><br><span class="line">父节点.inserBefore(新节点，已知节点)   <span class="comment">//插到已知节点之前</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="3-替换节点"><a href="#3-替换节点" class="headerlink" title="3.替换节点"></a>3.替换节点</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">父节点.replaceChild(新元素，旧元素)  <span class="comment">// 替换一个旧的子节点</span></span><br><span class="line">当前节点.cloneNode(<span class="literal">true</span>/<span class="literal">false</span>)   <span class="comment">//复制节点，true表示其子节点也一起复制，false则不是</span></span><br><span class="line">removeChild(要删除的节点)</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="三、属性操作"><a href="#三、属性操作" class="headerlink" title="三、属性操作"></a>三、属性操作</h2><h3 id="1-获取属性"><a href="#1-获取属性" class="headerlink" title="1.获取属性"></a>1.获取属性</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">getAttribute(属性名)</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-设置属性"><a href="#2-设置属性" class="headerlink" title="2.设置属性"></a>2.设置属性</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">setAttribute(属性名，属性值)</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-删除属性"><a href="#3-删除属性" class="headerlink" title="3.删除属性"></a>3.删除属性</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">removeChild(属性名)</span><br></pre></td></tr></table></figure>
+
+
+
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/07/16/%E5%9F%BA%E7%A1%80/Javascript/BOM/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="opopart">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Myblog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2020/07/16/%E5%9F%BA%E7%A1%80/Javascript/BOM/" itemprop="url">BOM对象</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-07-16T00:00:00+08:00">
+                2020-07-16
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%9F%BA%E7%A1%80/" itemprop="url" rel="index">
+                    <span itemprop="name">基础</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%9F%BA%E7%A1%80/JavaScript/" itemprop="url" rel="index">
+                    <span itemprop="name">JavaScript</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="Window对象"><a href="#Window对象" class="headerlink" title="Window对象"></a>Window对象</h1><h2 id="一、navigator对象"><a href="#一、navigator对象" class="headerlink" title="一、navigator对象"></a>一、navigator对象</h2><p>​        <code>Navigator</code> 接口表示用户代理的状态和标识</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//属性</span></span><br><span class="line">appCodeName	<span class="comment">//浏览器的代码名</span></span><br><span class="line">appName		<span class="comment">//浏览器名称</span></span><br><span class="line">appVersion	<span class="comment">//浏览器版本</span></span><br><span class="line">cookieEnabled	<span class="comment">//浏览器是否启用cookie，返回布尔值</span></span><br><span class="line">platform     <span class="comment">//浏览器的操作系统平台</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="二、screen对象"><a href="#二、screen对象" class="headerlink" title="二、screen对象"></a>二、screen对象</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">availHeight <span class="comment">//屏幕的可用高度</span></span><br><span class="line">availWidth <span class="comment">//屏幕的可用宽度</span></span><br><span class="line">height  <span class="comment">//屏幕的像素高度</span></span><br><span class="line">width   <span class="comment">//屏幕的像素宽度</span></span><br><span class="line">colorDepth <span class="comment">//屏幕颜色的位数</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="三、history对象"><a href="#三、history对象" class="headerlink" title="三、history对象"></a>三、history对象</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">back()	<span class="comment">//返回前一个url</span></span><br><span class="line">forward() <span class="comment">//返回下一个url</span></span><br><span class="line">go()  <span class="comment">//返回某个具体页面</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="四、location对象"><a href="#四、location对象" class="headerlink" title="四、location对象"></a>四、location对象</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//属性</span></span><br><span class="line">hash		<span class="comment">//从＃号开始的url</span></span><br><span class="line">host		<span class="comment">//当前url的端口号</span></span><br><span class="line">hostname	<span class="comment">//当前url主机名</span></span><br><span class="line">href		<span class="comment">//完整的url</span></span><br><span class="line">pathname   <span class="comment">//当前url的路径部分</span></span><br><span class="line">port	  <span class="comment">//当前url的端口号</span></span><br><span class="line">protocol  <span class="comment">//当前url协议</span></span><br><span class="line">search   <span class="comment">//(?)开始的url</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//方法</span></span><br><span class="line">assign(url)  <span class="comment">//加载新文档</span></span><br><span class="line">reload()    <span class="comment">//重新加载当前文档</span></span><br><span class="line">replace(newUrl)  <span class="comment">//新的文档替换当前文档</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="五、document对象"><a href="#五、document对象" class="headerlink" title="五、document对象"></a>五、document对象</h2><h3 id="1-集合"><a href="#1-集合" class="headerlink" title="1.集合"></a>1.集合</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">anchors[]  <span class="comment">//锚点对象数组</span></span><br><span class="line">Images[]  <span class="comment">//img对象数组</span></span><br><span class="line">links[]   <span class="comment">//链接对象数组</span></span><br><span class="line">forms[]  <span class="comment">//表单对象数组</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="2-属性"><a href="#2-属性" class="headerlink" title="2.属性"></a>2.属性</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">cookie  <span class="comment">//当前文档所有的cookie</span></span><br><span class="line">domain	<span class="comment">//当前文档的域名</span></span><br><span class="line">referrer  <span class="comment">//载入当前文档的文档的URL</span></span><br><span class="line">title	<span class="comment">//当前文档标题</span></span><br><span class="line">URL		<span class="comment">//当前文档URL</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="3-方法"><a href="#3-方法" class="headerlink" title="3.方法"></a>3.方法</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">open()  <span class="comment">//打开一个新文档，擦除旧文档</span></span><br><span class="line">close()  <span class="comment">//关闭文档输出流</span></span><br><span class="line">write()  <span class="comment">//向当前文档写入文本</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="六、窗口控制"><a href="#六、窗口控制" class="headerlink" title="六、窗口控制"></a>六、窗口控制</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scrollTO(x,y)  <span class="comment">//将窗口中的内容滚动到指定位置</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="七、焦点控制"><a href="#七、焦点控制" class="headerlink" title="七、焦点控制"></a>七、焦点控制</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">focus  <span class="comment">//浏览器窗口得到焦点</span></span><br><span class="line">blur   <span class="comment">//浏览器窗口失去焦点</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="八、打开关闭窗口"><a href="#八、打开关闭窗口" class="headerlink" title="八、打开关闭窗口"></a>八、打开关闭窗口</h2><h3 id="open"><a href="#open" class="headerlink" title="open"></a>open</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//语法</span></span><br><span class="line">open(<span class="string">'url'</span>,<span class="string">'窗口名称'</span>，<span class="string">'窗口风格'</span>)</span><br><span class="line"><span class="comment">//窗口风格</span></span><br><span class="line">heigh  <span class="comment">//不小于100</span></span><br><span class="line">width  <span class="comment">//不小于100</span></span><br><span class="line">top   <span class="comment">//窗口上坐标</span></span><br><span class="line">left  <span class="comment">//窗口左坐标</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="close"><a href="#close" class="headerlink" title="close"></a>close</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">close()   &#x2F;&#x2F;关闭窗口</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="九、定时器"><a href="#九、定时器" class="headerlink" title="九、定时器"></a>九、定时器</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">setTimeout</span><br><span class="line">clearTimeout</span><br><span class="line">setInterval</span><br><span class="line">clearInterval</span><br><span class="line">setImmediate  <span class="comment">//中断长时间运行的操作并在浏览器完成其他操作（例如事件和显示更新）后立即运行回调函数。</span></span><br><span class="line">clearImmediate</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="十、对话框"><a href="#十、对话框" class="headerlink" title="十、对话框"></a>十、对话框</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">alert()  &#x2F;&#x2F; alert(&#39;字符串&#39;)</span><br><span class="line">confirm()  &#x2F;&#x2F;confirm(&#39;提示字符串&#39;)  ，点击确定返回true，取消返回false</span><br><span class="line">prompt()   &#x2F;&#x2F;prompt(&#39;字符串&#39;，&#39;缺省值&#39;)， 缺省值是输入框的提示内容，确定返回输入的内容，取消返回null</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="十一、属性"><a href="#十一、属性" class="headerlink" title="十一、属性"></a>十一、属性</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//窗口位置</span></span><br><span class="line">IE：</span><br><span class="line">screenLeft  <span class="comment">//窗口左上角的x坐标</span></span><br><span class="line">screenTop  <span class="comment">//窗口左上角的Y坐标</span></span><br><span class="line"><span class="built_in">document</span>.body.scrollLeft</span><br><span class="line"><span class="built_in">document</span>.documentElement.scrollLeft   <span class="comment">//文档向右滚动的像素</span></span><br><span class="line"><span class="built_in">document</span>.body.scrollTop</span><br><span class="line"><span class="built_in">document</span>.documentElement.scrollTop	  <span class="comment">//文档向下滚动的像素</span></span><br><span class="line">非IE：</span><br><span class="line">screenX <span class="comment">//窗口左上角的x坐标</span></span><br><span class="line">screenY <span class="comment">//窗口左上角的Y坐标</span></span><br></pre></td></tr></table></figure>
+
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/07/16/%E5%9F%BA%E7%A1%80/Javascript/%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E5%92%8C%E5%86%85%E5%AD%98%E6%B3%84%E6%BC%8F/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="opopart">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Myblog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2020/07/16/%E5%9F%BA%E7%A1%80/Javascript/%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E5%92%8C%E5%86%85%E5%AD%98%E6%B3%84%E6%BC%8F/" itemprop="url">垃圾回收内存泄漏</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-07-16T00:00:00+08:00">
+                2020-07-16
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%9F%BA%E7%A1%80/" itemprop="url" rel="index">
+                    <span itemprop="name">基础</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%9F%BA%E7%A1%80/JavaScript/" itemprop="url" rel="index">
+                    <span itemprop="name">JavaScript</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="内存泄漏"><a href="#内存泄漏" class="headerlink" title="内存泄漏"></a>内存泄漏</h2><blockquote>
+<p>所谓内存泄漏是指不再用到的内存，没有及时的释放</p>
+</blockquote>
+<h2 id="垃圾回收的必要性"><a href="#垃圾回收的必要性" class="headerlink" title="垃圾回收的必要性"></a>垃圾回收的必要性</h2><p>由于字符串，对象和数组都没有固定的大小，所以当他们大小已知时，才能对他们进行动态的存储分配，所以每次创建时，解释器都要为之分配内存，而且最终都要释放这些内存以便重新利用，否则，Javascript解释器将会消耗完内存中的所有可用内存，造成系统奔溃</p>
+<h2 id="垃圾回收机制"><a href="#垃圾回收机制" class="headerlink" title="垃圾回收机制"></a>垃圾回收机制</h2><h3 id="1-标记清除"><a href="#1-标记清除" class="headerlink" title="1.标记清除"></a>1.标记清除</h3><blockquote>
+<p>当变量进入执行环境时，就会标记这个变量为‘进入环境’，当变量离开执行环境时，则标记为‘离开环境</p>
+</blockquote>
+<p>垃圾收集器在执行时，回为内存中的所有变量加上标记。然后他会去掉环境中的变量以及被环境中的变量引用的标记。而之后被加上标记的变量将被视为将要删除的变量</p>
+<p><img src="D:%5C%E7%AC%94%E8%AE%B0%5C%E5%9F%BA%E7%A1%80%5Cjs%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%5C%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6.gif" alt=""></p>
+<p>例子</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> m = <span class="number">0</span>, n = <span class="number">10</span>;</span><br><span class="line">add(m, n);  <span class="comment">//把a,b,c标记进入环境</span></span><br><span class="line"><span class="built_in">console</span>.log(n);  <span class="comment">//把a,b,c标记退出环境</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">add</span>(<span class="params">m, n</span>) </span>&#123;</span><br><span class="line">	<span class="keyword">var</span> a = m, b = n;</span><br><span class="line">	<span class="keyword">var</span> c = a + b;</span><br><span class="line">	<span class="keyword">return</span> c</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-引用计数"><a href="#2-引用计数" class="headerlink" title="2.引用计数"></a>2.引用计数</h3><blockquote>
+<p>语言引擎有一张引用表，保存了内存里所有资源的引用次数。如果一个值的引用次数是0则表示这个值再也不会用到了，因此将这块内存释放</p>
+</blockquote>
+<h4 id="存在的问题-循环引用"><a href="#存在的问题-循环引用" class="headerlink" title="存在的问题(循环引用)"></a>存在的问题(循环引用)</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">fn</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">	<span class="keyword">let</span> obj1 = &#123;&#125;;</span><br><span class="line">	<span class="keyword">let</span> obj2 = &#123;&#125;;</span><br><span class="line">	obj1.a = obj2;</span><br><span class="line">	obj2.b = obj1;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//当函数fn执行结束后，obj1 和 obj2 的引用计数都不为0，所有不会回收</span></span><br><span class="line"><span class="comment">//所以可以手动回收</span></span><br><span class="line">obj1 = <span class="literal">null</span>;</span><br><span class="line">obj2 = <span class="literal">null</span>;</span><br></pre></td></tr></table></figure>
+
+<h2 id="引起内存泄漏的情况"><a href="#引起内存泄漏的情况" class="headerlink" title="引起内存泄漏的情况"></a>引起内存泄漏的情况</h2><h3 id="1-意外的全局变量"><a href="#1-意外的全局变量" class="headerlink" title="1,意外的全局变量"></a>1,意外的全局变量</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//在函数中没有声明而直接使用变量</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">fn</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">	p = <span class="string">'asdasd'</span>  <span class="comment">//p为一个全局变量</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-被遗忘的计算器或回调函数"><a href="#2-被遗忘的计算器或回调函数" class="headerlink" title="2.被遗忘的计算器或回调函数"></a>2.被遗忘的计算器或回调函数</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> someResource = getData();</span><br><span class="line">setInterval(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> node = <span class="built_in">document</span>.getElementById(<span class="string">'Node'</span>);</span><br><span class="line">    <span class="keyword">if</span>(node) &#123;</span><br><span class="line">        <span class="comment">// 处理 node 和 someResource</span></span><br><span class="line">        node.innerHTML = <span class="built_in">JSON</span>.stringify(someResource));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;, <span class="number">1000</span>);</span><br><span class="line"><span class="comment">// 计数器的引用还存在，且回调函数包含函数外部someResource的引用，someResource也不会被释放</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="3-闭包"><a href="#3-闭包" class="headerlink" title="3.闭包"></a>3.闭包</h3><h3 id="4-没有清理的DOM元素引用"><a href="#4-没有清理的DOM元素引用" class="headerlink" title="4.没有清理的DOM元素引用"></a>4.没有清理的DOM元素引用</h3><h2 id="垃圾回收优化场景"><a href="#垃圾回收优化场景" class="headerlink" title="垃圾回收优化场景"></a>垃圾回收优化场景</h2><h3 id="数组长度置为0"><a href="#数组长度置为0" class="headerlink" title="数组长度置为0"></a>数组长度置为0</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> arr = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]</span><br><span class="line">arr.length = <span class="number">0</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="对象尽量复用或置为null"><a href="#对象尽量复用或置为null" class="headerlink" title="对象尽量复用或置为null"></a>对象尽量复用或置为null</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> t = &#123;&#125;;</span><br><span class="line">t = <span class="literal">null</span>;</span><br></pre></td></tr></table></figure>
+
+<h3 id="循环中的表达式如果能复用，最好放到循环外面"><a href="#循环中的表达式如果能复用，最好放到循环外面" class="headerlink" title="循环中的表达式如果能复用，最好放到循环外面"></a>循环中的表达式如果能复用，最好放到循环外面</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 在循环中最好也别使用函数表达式。</span><br><span class="line">for (var k &#x3D; 0; k &lt; 10; k++) &#123;</span><br><span class="line">  var t &#x3D; function(a) &#123;</span><br><span class="line">    &#x2F;&#x2F; 创建了10次  函数对象。</span><br><span class="line">    console.log(a)</span><br><span class="line">  &#125;</span><br><span class="line">  t(k)</span><br><span class="line">&#125;</span><br><span class="line">&#x2F;&#x2F; 推荐用法</span><br><span class="line">function t(a) &#123;</span><br><span class="line">  console.log(a)</span><br><span class="line">&#125;</span><br><span class="line">for (var k &#x3D; 0; k &lt; 10; k++) &#123;</span><br><span class="line">  t(k)</span><br><span class="line">&#125;</span><br><span class="line">t &#x3D; null</span><br></pre></td></tr></table></figure>
+
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
   </section>
 
   
+  <nav class="pagination">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">&lt;i class&#x3D;&quot;fa fa-angle-right&quot;&gt;&lt;&#x2F;i&gt;</a>
+  </nav>
+
 
 
           </div>
@@ -1844,7 +2403,7 @@
               
                 <a href="/archives">
               
-                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-count">14</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
